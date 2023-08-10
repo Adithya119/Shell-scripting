@@ -1,1 +1,27 @@
 # shell scripting - class-1
+
+# https://directdevops.blog/2020/08/14/linux-classroom-series-13-aug-2020/
+
+
+All scripts (script files) should have execute (x) permission. --> chmod +x helloworld.sh
+----
+
+Q) How does the system know we are executing a shell/bash script?
+A) Every shell script needs to start with #!/bin/bash -> by reading this, system k.nows it's a shell script & to run this script, it takes an executable from that path (#!/bin/bash) & runs it using bash
+
+Note:-
+Similarly if a script starts with #!/usr/bin/python3, the system knows it's a python script & takes the executable from that path & runs it using python.
+
+----
+
+./helloworld.sh -> in my current directory, run a script called helloworld.sh (. denotes current directory)
+
+----
+
+# In shell the character which we use to denote comments is #
+
+
+---
+
+# Shell script is a sequence of linux commands that are to be executed in an order.
+
