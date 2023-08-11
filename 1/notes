@@ -20,8 +20,12 @@ Similarly if a script starts with #!/usr/bin/python3, the system knows it's a py
 
 # In shell the character which we use to denote comments is #
 
+----
 
----
+ls -R 
+ls --recursive
+# Both these commands give same result. They list the files/folders of the current directory recursively.
 
-# Shell script is a sequence of linux commands that are to be executed in an order.
+----
 
+# * * * Shell script is a sequence of linux commands that are to be executed in an order * * * *
