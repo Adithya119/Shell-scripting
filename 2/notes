@@ -1,1 +1,62 @@
 # class-2 notes
+
+# https://directdevops.blog/2020/08/25/linux-classroom-series-25-aug-2020/
+
+----
+Assigning a variable in shell scripting:-
+java_package="openjdk-11-jdk"
+
+Referencing the variable in shell scripting:-
+    ${java_package} or $java_package
+---
+
+################## Note:- ###########################
+In Ansible:- 
+Assigning a var:-
+java_package: openjdk-11-jdk
+
+Referencing the var:-
+"{{ Java_package }}"
+---
+
+In Terraform:- 
+Assigning a var:-
+variable "vpc_cidr" {
+    default = "192.168.0.0/16"
+    description = "vpc cidr"
+}
+
+Referencing the var:-
+cidr_block = var.vpc_cidr
+#####################################################
+
+----
+## decalring the variable  ## no space after =
+name="Adithya"  ## decalring the variable  ## no space after =
+
+echo $name  --> get me the value of the variable called as "name". The below commands also yield the same result:-
+echo ${name}
+### interpolating the variable into static content
+echo "Name == ${name}"    ### interpolating the variable into static content
+
+Note:-
+echo name & echo "name" will print name & not the variable it holds.
+
+### refer blog for implementing the above
+
+----
+
+number=5
+echo $number + 1   
+
+# All the variables are treated as "text" by linux until and unless you are explicitly specify it's arithmetic. Hence the above will print 5 + 1 & not 6
+
+----
+
+# If you want shell script to consider variable number as "integer" instead of text, we need to use this arithmetic expression:-
+
+$(( ${number} + 1 ))
+# enclose $number + 1 with  $((  ))
+Now, echo $(( ${number} + 1 )) will do the arithmetic & print 6
+
+----
