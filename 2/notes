@@ -56,7 +56,7 @@ echo $number + 1
 # If you want shell script to consider variable number as "integer" instead of text, we need to use this arithmetic expression:-
 
 $(( ${number} + 1 ))
-# enclose $number + 1 with  $((  ))
+# enclose "$number + 1" with  $((  ))
 Now, echo $(( ${number} + 1 )) will do the arithmetic & print 6
 
 ----
