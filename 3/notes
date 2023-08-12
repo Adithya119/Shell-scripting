@@ -15,8 +15,37 @@ But if you define that arguement inside the script, it becomes a parameter. --> 
 
 refer "positional_arg.sh":-
 # trainer has defined the parameters inside the script like below (name is parameter-1 & location is parameter-2). Here, parameter-1 holds the value of arg-1 & parameter-2 holds the value of arg-2.
- 
+
 # name=$1
 # location=$2
 
 # Arguement & Parameter yield the same result but Parameter looks sophisticated. That's it. Parameters are not mandatory.
+
+----
+
+### Prompting for user input (interactive script):-
+
+read  # ---> type read & hit enter
+Hello   # ---> then type some message
+
+echo $REPLY   # ---> the above message (hello) will be stored "automatically" in a variable called as $REPLY
+Hello
+
+
+# As we go below, we'll see how to get more control on the code:-
+
+read -p "What is your name? "   # ---> type this & hit enter   # give space after ? --> or else you'll have to write your input right after the ? without any space which woould look like --->  What is your name?Adithya
+What is your name? Adithya     # ---> "What's your name" is prompted on the screen & you can type your name (Adithya)
+
+echo $REPLY
+Adithya
+
+
+## What if I want to store the user input in some other variable name of my choice rather than in $REPLY ?
+read -p "What is your name? " your_name
+What is your name? Adithya
+
+echo $your_name
+Adithya
+
+# Like this, you can store multiple user inputs in different variables  ---> refer user_input.sh
