@@ -11,9 +11,8 @@ echo $(( a ${operation} b ))                 # use echo to print to screen  # th
 
 
 # ./calculator.sh
-# enter any of a+b, a-b, a*b, a/b   # just echo
+# calculator which can add, sub, mul & div 2 numbers
 # enter a 10
 # enter b 2
-# enter operation +
-
-
+# enter operation /
+# 5

@@ -49,3 +49,5 @@ echo $your_name
 Adithya
 
 # Like this, you can store multiple user inputs in different variables  ---> refer user_input.sh
+
+# Also look at calculator.sh which I have written on my own * * *
