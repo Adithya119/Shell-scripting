@@ -4,3 +4,19 @@
 
 ----
 
+# refer positional_arg.sh & positional_arg_2.sh
+
+----
+
+### Difference between Parameters & arguments:-
+
+Argument is something which you pass to a script on the command line (on the go).
+But if you define that arguement inside the script, it becomes a parameter. --> parameter holds the value of arg.
+
+refer "positional_arg.sh":-
+# trainer has defined the parameters inside the script like below (name is parameter-1 & location is parameter-2). Here, parameter-1 holds the value of arg-1 & parameter-2 holds the value of arg-2.
+ 
+# name=$1
+# location=$2
+
+# Arguement & Parameter yield the same result but Parameter looks sophisticated. That's it. Parameters are not mandatory.
