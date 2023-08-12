@@ -91,8 +91,10 @@ If you need to defined a user, use a prefix for it (ex:- JDK_PATH, DEFAULT_USER,
 # User inputs in shell scripting:-
 
 Basic inputs:-
-# The script shown in blog is depending on positional arguments.
+# refer positional_arguements.sh
 
+${0} stands for executable 
+${1} stands for 1st positional arguement
 
 ping google.com
 # ping is executable 
@@ -102,12 +104,14 @@ cp 1.txt 2.txt
 # exec arg1 arg2 --> 1.txt & 2.txt are two positional arguments
 
 # the above are positional arguements. Positional arguements are also called as parameters.
+
 ----
 
 Generally, we have 2 kinds of arguements:-
-1) positional arguements
+1) positional arguements:-
+Refer above
 
-2) names arguements
+2) named arguements:-
 ex:-
 ping --count 4 google.com
 # google.com is a positional argument
