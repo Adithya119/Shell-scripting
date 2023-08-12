@@ -2,6 +2,8 @@
 
 # https://directdevops.blog/2020/08/14/linux-classroom-series-13-aug-2020/
 
+# scripting done in "Redhat-node-ansible" vm * * *
+
 
 All scripts (script files) should have execute (x) permission. --> chmod +x helloworld.sh
 ----

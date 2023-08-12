@@ -4,7 +4,7 @@
 
 ----
 Assigning a variable in shell scripting:-
-java_package="openjdk-11-jdk"
+java_package="openjdk-11-jdk"                     # similar to Terraform but no spaces around the "=" sign.
 
 Referencing the variable in shell scripting:-
     ${java_package} or $java_package
@@ -32,32 +32,34 @@ cidr_block = var.vpc_cidr
 
 ----
 ## decalring the variable  ## no space after =
-name="Adithya"  ## decalring the variable  ## no space after =
+name="Adithya"  ## decalring the variable  ## no space after =      ## the value can have spaces inside
 
 echo $name  --> get me the value of the variable called as "name". The below commands also yield the same result:-
 echo ${name}
 ### interpolating the variable into static content
-echo "Name == ${name}"    ### interpolating the variable into static content
+echo "Name == ${name}"    ### this is how we interpolate the variable into static content
 
 Note:-
-echo name & echo "name" will print name & not the variable it holds.
+echo name & echo "name" will print name & not the value of the variable it holds.
 
 ### refer blog for implementing the above
 
 ----
 
+# All the variables are treated as "text" by linux until and unless you explicitly specify it's arithmetic. Hence the below will print 5 + 1 & not 6
+
 number=5
 echo $number + 1   
-
-# All the variables are treated as "text" by linux until and unless you are explicitly specify it's arithmetic. Hence the above will print 5 + 1 & not 6
+# refer text.sh
 
 ----
 
 # If you want shell script to consider variable number as "integer" instead of text, we need to use this arithmetic expression:-
 
 $(( ${number} + 1 ))
-# enclose "$number + 1" with  $((  ))
+# enclose "$number + 1" within  $((  ))
 Now, echo $(( ${number} + 1 )) will do the arithmetic & print 6
+# refer arithmetic.sh
 
 ----
 Note:-
