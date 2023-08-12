@@ -60,3 +60,53 @@ $(( ${number} + 1 ))
 Now, echo $(( ${number} + 1 )) will do the arithmetic & print 6
 
 ----
+Note:-
+
+# set
+# set | less
+The above commands list out all the pre-defined & user defined env variables.
+----
+
+
+# In shell scripting we following certain naming conventions:-
+
+1) for variables:-
+Always define variables in lowercase (underscore is optional):-
+ex:-
+my_number=6
+java_package="openjdk-11-jdk"
+
+2) for constants:-
+Always define constants in uppercase because the value(s) of constants don't usually change.
+ex:-
+DEFAULT_USER="jenkins"
+
+3) Do not create variables with names which are already pre-defined (system defined) like PATH, USER, etc. --> see 'set' command output.
+If you need to defined a user, use a prefix for it (ex:- JDK_PATH, DEFAULT_USER, etc.)
+----
+
+
+# User inputs in shell scripting:-
+
+Basic inputs:-
+# The script shown in blog is depending on positional arguments.
+
+
+ping google.com
+# ping is executable 
+# google.com is arguement
+
+cp 1.txt 2.txt
+# exec arg1 arg2 --> 1.txt & 2.txt are two positional arguments
+
+# the above are positional arguements. Positional arguements are also called as parameters.
+----
+
+Generally, we have 2 kinds of arguements:-
+1) positional arguements
+
+2) names arguements
+ex:-
+ping --count 4 google.com
+# google.com is a positional argument
+# where as 4 is a named argument as it is a value for a name called as count
