@@ -3,7 +3,7 @@
 echo "calculator which can add, sub, mul & div 2 numbers"
 read -p "enter a " a
 read -p "enter b " b
-read -p "enter operation" operation
+read -p "enter operation " operation
 echo $(( a ${operation} b ))                  # user echo to print to screen
 
 
