@@ -79,7 +79,7 @@ my_number=6
 java_package="openjdk-11-jdk"
 
 2) for constants:-
-Always define constants in uppercase because the value(s) of constants don't usually change.
+Always define constants in uppercase.          #### the value(s) of constants don't usually change.
 ex:-
 DEFAULT_USER="jenkins"
 
