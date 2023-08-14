@@ -10,9 +10,9 @@
 
 The default scope of a variable which is defined in a script is within the same script file.   
 
-However, if needed, you can export the variable in script-1 over to external scripts (script-2) using "export" statement.  # "export" statement should be in script-1 .
+However, if needed, you can export the variable in script-1.sh over to external scripts (script-2.sh) using "export" statement.  # "export" statement should be in script-1 .
 
-Other way to export is using "args" on the command line --->   ./script2.sh $name   # here, $name is the var we are exporting from script-1 to script-2. But, I would prefer the "export" statement method to export.
+Other way to export is using "args" on the command line --->   ./script2.sh $name   # here, $name is the var we are exporting from script-1.sh to script-2.sh. But, I would prefer the "export" statement method to export.
 
 ----
 
@@ -30,14 +30,6 @@ echo "The zeroth arguement (the executable) is $(basename $0)"   # --> input stm
 The zeroth arguement (the executable) is debug-demo.sh           # --> output stmt
 echo "Hello $*"                                                  # --> input stmt
 Hello Adithya Reddy                                              # --> output stmt
-
-
-#!/bin/bash
-
-echo "The zeroth arguement (the executable) is $(basename $0)"
-The zeroth arguement (the executable) is debug-demo.sh
-echo "Hello $*"
-Hello Adithya Reddy
 
 
 
