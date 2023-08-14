@@ -5,8 +5,9 @@ echo "Hello $*"
 
 
 
-### notes:
+### side notes:
 
-# [ec2-user@ip-172-31-45-220 4]$ ./debug-demo.sh Adithya Reddy Kariveda
-# The zeroth arguement (the executable) is ./debug-demo.sh
-# Hello Adithya Reddy Kariveda
+#  ${0} ---> prints the executable, which is ./debug-demo.sh
+#  $(basename $0) ---> Also prints the executable, but in a neat way, which is debug-demo.sh
+
+# echo "Hello $*" --> * prints out all the args you give (ex:- Hello Adithya Reddy Kariveda)
