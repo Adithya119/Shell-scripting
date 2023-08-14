@@ -11,4 +11,4 @@ export name                                    # export statement
 
 # 3rd statement in the code is to run script-2.sh   -->  make sure to give it's right path
 
-# export statement exports the value of the variable 'name' to whichever script you mention below it
+# export statement exports the value of the variable 'name' to whichever script you mention below it. In this case, script-2.sh knows the value of the 'name' variable.
