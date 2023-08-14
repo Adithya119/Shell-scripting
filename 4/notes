@@ -1,0 +1,30 @@
+# class-4 notes
+
+# https://directdevops.blog/2020/08/29/linux-classroom-series-28-aug-2020/
+
+----
+#####################  * This class is just about making your scripts more professional *  #####################
+
+
+###  Scope of variables  ###   ---> ( refer blog for explaination ) 
+
+The default scope of a variable which is defined in a script is within the same script file.   
+
+However, if needed, you can export the variable in the script (ex:- script-1) using "export" statement in script-1 over to external scripts.
+
+Other way to export is using "args" on the command line --->   ./script2.sh $name   (here, $name is the var we are exporting from script-1 to script-2). But, I would prefer the "export" statement method to export.
+
+----
+
+
+###  Debugging your scripts  ###
+
+bash -v    ## this displays both input & output statements
+
+bash -x    ## 1st it is evaluating basename, then in 2nd line, it is replacing the basename with it's value (executable)
+# This way shows how the commands are evaluated. Very useful when conditional statements are there in your script.
+
+----
+
+
+###  Enhancing interactive scripts  ###     ------->   Refer blog
