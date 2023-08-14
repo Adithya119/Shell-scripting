@@ -10,9 +10,9 @@
 
 The default scope of a variable which is defined in a script is within the same script file.   
 
-However, if needed, you can export the variable in the script (ex:- script-1) using "export" statement in script-1 over to external scripts.
+However, if needed, you can export the variable in script-1 over to external scripts (script-2) using "export" statement.  # "export" statement should be in script-1 .
 
-Other way to export is using "args" on the command line --->   ./script2.sh $name   (here, $name is the var we are exporting from script-1 to script-2). But, I would prefer the "export" statement method to export.
+Other way to export is using "args" on the command line --->   ./script2.sh $name   # here, $name is the var we are exporting from script-1 to script-2. But, I would prefer the "export" statement method to export.
 
 ----
 
