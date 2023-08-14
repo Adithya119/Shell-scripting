@@ -19,12 +19,68 @@ Other way to export is using "args" on the command line --->   ./script2.sh $nam
 
 ###  Debugging your scripts  ###
 
-bash -v    ## this displays both input & output statements
+1) 
+bash -v   # ---> this displays both input & output statements. -v option displays the verbose output from bash. Disadvantage is this is it also displays the comments which are inside the script file. Hence use -x option.
 
-bash -x    ## 1st it is evaluating basename, then in 2nd line, it is replacing the basename with it's value (executable)
-# This way shows how the commands are evaluated. Very useful when conditional statements are there in your script.
+# ex:-
+bash -v ./debug-demo.sh Adithya Reddy
+#!/bin/bash
+
+echo "The zeroth arguement (the executable) is $(basename $0)"   # --> input stmt
+The zeroth arguement (the executable) is debug-demo.sh           # --> output stmt
+echo "Hello $*"                                                  # --> input stmt
+Hello Adithya Reddy                                              # --> output stmt
+
+
+#!/bin/bash
+
+echo "The zeroth arguement (the executable) is $(basename $0)"
+The zeroth arguement (the executable) is debug-demo.sh
+echo "Hello $*"
+Hello Adithya Reddy
+
+
+
+### side notes:
+
+#  ${0} ---> prints the executable, which is ./debug-demo.sh
+#  $(basename $0) ---> Also prints the executable, but in a neat way, which is debug-demo.sh
+
+# echo "Hello $*" --> * prints out all the args you give (ex:- Hello Adithya Reddy Kariveda)
+
+
+2)
+bash -x    # ---> 1st it is evaluating basename, then in 2nd line, it is replacing the basename with it's value (executable). This way shows how the commands are evaluated. Very useful when conditional statements are there in your script. Also this way, it's not displaying the comments inside the script. (which is good)
+
+# ex:-
+bash -x ./debug-demo.sh Adithya Reddy
+++ basename ./debug-demo.sh                                          # it is evaluating basename
++ echo 'The zeroth arguement (the executable) is debug-demo.sh'      # replacing the basename with it's value
+The zeroth arguement (the executable) is debug-demo.sh
++ echo 'Hello Adithya Reddy'
+Hello Adithya Reddy
+
 
 ----
 
 
 ###  Enhancing interactive scripts  ###     ------->   Refer blog
+
+# limiting user input character limit:-
+read -n1 -p "Do you want to continue (y/n)? "   # --> n1 
+Do you want to continue (y/n)? y
+
+# n1 means limiting the user to type only 1 character. Similarly, n2 means only 2 characters.
+--
+
+# To hide the text when user is typing:-
+read -s -p "enter your password " password    # 's' may stand for secret
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+# summary:-
+1) "export" command 
+2) use bash -x instead of bash -v
+3) limiting user input character limit
+4) hide the text when user is typing
