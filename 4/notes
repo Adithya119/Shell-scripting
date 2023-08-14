@@ -78,7 +78,6 @@ read -s -p "enter your password " password    # 's' may stand for secret
 
 ----------------------------------------------------------------------------------------------------------------------------
 
-
 # summary:-
 1) "export" command 
 2) use bash -x instead of bash -v
