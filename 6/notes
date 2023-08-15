@@ -6,9 +6,10 @@
 ####  Some examples of popular conditions  ####   ---> refer practice.sh file 
 
 note:- commands 4 & 5 yield the same result but have slighly different syntax
+---
 
-exit 1 --> coz this is an error
-
+create_dir.sh   # This is not a proper code coz the last line won't even be read by bash coz script terminates before.
+# hence refer "create_dir_file.sh" on how to properly write the code.
 ---
 
 combining multiple conditions with and & or statements
