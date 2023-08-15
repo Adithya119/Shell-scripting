@@ -9,6 +9,8 @@ When a command is run in linux OS, a parent shell is formed which will further c
 
 # mktemp --> it creates a temporary directory
 
+# refer exitcode-demo.sh
+
 mktemp_ec=$?  # --> trainer used this in script ==> he is storing the value of $? in some variable because the value of $? will be overwrriten by the next command.  * * * * *
 
 # 'ec' stands for exit code
