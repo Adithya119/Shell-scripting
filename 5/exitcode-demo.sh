@@ -3,7 +3,7 @@
 mktemp
 mktemp_ec=$?
 
-mkdir /home/ubuntu                   # this will fail coz /home/ubuntu already exists
+mkdir /home/ec2-user                   # this will fail coz /home/ec2-user already exists
 mkdir_ec=$?
 
 echo "exit code of mktemp is ${mktemp_ec}"
