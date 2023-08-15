@@ -17,7 +17,7 @@ combining multiple conditions with and & or statements
 # Note:-
 $#    # --> this tells no. of args you have passed to your script
 
-# check if the directory exists, if it doesnot exist create directory. If for some reason, dir creation fails, print "annot create directory" & do exit 1 because there's no point in continuing with this script anymore.
+# check if the directory exists, if it doesnot exist create directory. If for some reason, dir creation fails, print "cannot create directory" & do exit 1 because there's no point in continuing with this script anymore.
 if [[ ! -d ${directory_name} ]]; then
     mkdir ${directory_name} || { echo "Cannot create directory"; exit 1; }
 
