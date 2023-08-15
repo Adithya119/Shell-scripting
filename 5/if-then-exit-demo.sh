@@ -4,7 +4,7 @@ FILE=/tmp/testing.txt      # storing the file name (with full path) in a variabl
 
 if [[ -f ${FILE} ]]; then
    cat ${FILE}
-   exit 0
+   exit 0        # you are writing 0 coz if the bash reads this line, it means file exists
 fi
 
 exit 1

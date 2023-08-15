@@ -1,0 +1,39 @@
+# class-6 notes
+
+# https://directdevops.blog/2020/09/01/linux-classroom-series-01-sept-2020/
+----
+
+####  Some examples of popular conditions  ####   ---> refer practice.sh file 
+
+note:- commands 4 & 5 yield the same result but have slighly different syntax
+
+exit 1 --> coz this is an error
+
+---
+
+combining multiple conditions with and & or statements
+---
+
+# Note:-
+$#    # --> this tells no. of args you have passed to your script
+
+# check if the directory exists, if it doesnot exist create directory. If for some reason, dir creation fails, print "annot create directory" & do exit 1 because there's no point in continuing with this script anymore.
+if [[ ! -d ${directory_name} ]]; then
+    mkdir ${directory_name} || { echo "Cannot create directory"; exit 1; }
+
+Note:-
+if [[ ! -d
+write -d first & then give ! # --> make this a habit coz it's easy to remember
+
+# ||  ---> this denotes 'or' operation / statement
+---
+
+# Note:- do bash -x & see what commands its reading & executing
+---
+
+# Note:-
+In command line usage when arguments are in <> they are required arguments and if the arguments are in [] they are optional.
+---
+
+reply,,  # ->  ,, means convert to lower case
+reply^^  # ->  ^^ means convert to upper case
