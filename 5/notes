@@ -26,6 +26,7 @@ test -d /home/ubuntu/   # --> checks if this dir exists
 
 test -f <filename>    # --> checks if this file exists
 [ -f <filename> ]     # --> short form
+[ -f <filename> ] && echo "File exists" || echo "File doesn't exist"  # --> on the console, this will return either of the 2 echo's depending on the file existence.
 
 test 5 -gt 2 && echo "Yes" || echo "No"      # ------> test if 5 is > 2; if yes, return Yes, if not, return No.
 test 5 -gt 2      # ----> it will return 0      check 'echo $?'

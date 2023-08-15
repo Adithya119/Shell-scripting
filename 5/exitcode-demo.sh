@@ -7,4 +7,4 @@ mkdir /home/ec2-user                   # this will fail coz /home/ec2-user alrea
 mkdir_ec=$?
 
 echo "exit code of mktemp is ${mktemp_ec}"
-echo "exit code of mkdir id ${mkdir_ec}"
+echo "exit code of mkdir is ${mkdir_ec}"
