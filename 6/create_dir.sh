@@ -14,7 +14,12 @@ fi
    exit 1
 
 
-# creating a file inside that dir
+# creating a file inside the dir if that dir was created
 
-touch temp-dir/1.txt
-exit 0
+if [[ -d temp-dir ]]; then
+   touch temp-dir/1.txt
+   echo "file creation successful"
+fi
+
+   echo "file creation failed"
+   exit 1
