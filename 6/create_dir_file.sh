@@ -9,7 +9,7 @@ mkdir_ec=$?
 if [[ ${mkdir_ec} -eq 0 ]]; then
    echo "directory creation successful"
    touch temp-dir/1.txt
-   ls --recusrive
+   ls --recursive
    exit 0
 fi
 
