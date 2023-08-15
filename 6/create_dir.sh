@@ -8,7 +8,6 @@ mkdir_ec=$?
 
 if [[ ${mkdir_ec} -eq 0 ]]; then
    echo "directory creation successful"
-   exit 0
 fi
 
    echo "directory creation failed"
@@ -18,3 +17,4 @@ fi
 # creating a file inside that dir
 
 touch temp-dir/1.txt
+exit 0
