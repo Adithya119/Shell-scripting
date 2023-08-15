@@ -1,0 +1,42 @@
+# class-5 notes
+
+# https://directdevops.blog/2020/08/31/linux-classroom-series-31-aug-2020/
+----
+
+##### Exit code / return code #####
+
+When a command is run in linux OS, a parent shell is formed which will further create a child shell. Commands are run in the child shell & the parent shell knows if the outcome is a successful execution of the command or a failure.
+
+# mktemp --> it creates a temporary directory
+
+mktemp_ec=$?  # --> trainer used this in script ==> he is storing the value of $? in some variable because the value of $? will be overwrriten by the next command.  * * * * *
+
+# 'ec' stands for exit code
+# $? --> $? stores the exit code / return code of the most recent command you ran ( check 'echo $?' ). Try pinging google.com & then check $?, it will show 0 which is the exit code for success. Any other code means failure.
+
+----
+
+##### Use of 'test' command  #####  ---> ( refer blog )
+
+test -d /home/ubuntu/   # --> checks if this dir exists
+[ -d <dirpath> ]    # --> short form / short hand
+[[ -d <dirpath> ]]   # --> use double brackets if the directory name has space(s)   # you can use this even if it doesn't have spaces. So, use double brackets anyway.
+
+test -f <filename>    # --> checks if this file exists
+[ -f <filename> ]     # --> short form
+
+test 5 -gt 2 && echo "Yes" || echo "No"      # ------> test if 5 is > 2; if yes, return Yes, if not, return No.
+test 5 -gt 2      # ----> it will return 0      check 'echo $?'
+test 5 -gt 10     # ----> it will return 1
+[ 5 -gt 2 ]       # --> short form
+
+# similarly, we have -ne (not equal to), -eq (equal to), -lt (less than), etc.
+
+----
+
+
+#######  if-then-exit  ########
+
+# check blog for notes
+
+if-then-exit-demo.sh   # ---> script which prints content of a file
