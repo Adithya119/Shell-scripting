@@ -26,7 +26,7 @@ touch temp-dir/1.txt                  # this line won't even be read by the bash
 # [ec2-user@ip-172-31-45-220 6]$ ./create_dir.sh
 # directory creation successful
 
-# [ec2-user@ip-172-31-45-220 6]$ ./create_dir.sh
+# [ec2-user@ip-172-31-45-220 6]$ ./create_dir.sh   --> running for the 2nd time
 # mkdir: cannot create directory ‘temp-dir’: File exists
 # directory creation failed                   ==> coz dir already exists
 
