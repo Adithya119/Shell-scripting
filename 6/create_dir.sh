@@ -36,3 +36,7 @@ touch temp-dir/1.txt                  # this line won't even be read by the bash
 # [ec2-user@ip-172-31-45-220 6]$ cd temp-dir/
 # [ec2-user@ip-172-31-45-220 temp-dir]$ ls    ==> 1.txt not created
 # [ec2-user@ip-172-31-45-220 temp-dir]$
+
+#    ----------
+
+# trainer has written this script in a different way ==> using "-ne 0"
