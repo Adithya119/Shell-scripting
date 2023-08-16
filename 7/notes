@@ -1,6 +1,10 @@
 # class-7 notes
-
 # https://directdevops.blog/2020/09/02/linux-classroom-series-02-sept-2020/
+
+# Special parameters
+# Setting default values to parameters
+# Looping constructs in bash scripting ('for' loop, IFS)
+
 ----
 
 ### Special parameters  --> (refer blog)
@@ -42,7 +46,7 @@ done
 
 ----
 
-# IFS:-
+# IFS (Internal Field Separator):-
 
 # By default the IFS value has one of (space, newline or tab)
 
