@@ -9,3 +9,6 @@ done
 
 
 # echo "${courses[$index]}" also works  ==> double quotes is recommended to avoid issues.
+
+##### Important observation :-
+# In c-language styled for-loop, 'courses' was defined outside of for-loop, unlike in for-loop-1.sh

@@ -66,8 +66,6 @@ refer "for-loop-1.sh"    ===> looks very easy
 refer "for-loop-2.sh" for c-language styled for-loop 
 syntax used:  --> courses=(a b c d e)   ==> array of variables
 
-# Summary of for-loop:-
-In c-language styled for-loop, 'courses' was defined outside of for-loop, unlike in for-loop-1.sh
 ----
 
 # Note:-
@@ -76,7 +74,8 @@ In c-language styled for-loop, 'courses' was defined outside of for-loop, unlike
 
 ----
 
-# IFS (Internal Field Separator):-
+2)
+IFS (Internal Field Separator):-
 
 # By default the IFS value has one of (space, newline or tab)
 
