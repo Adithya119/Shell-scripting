@@ -1,7 +1,7 @@
 #!/bin/bash
 
-name={$1-"guest"}
-course={$2-"IT Introduction"}
+name=${1-"guest"}
+course=${2-"IT Introduction"}
 
 # at this point, the args will either have user-provided or default values
 

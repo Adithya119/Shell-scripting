@@ -3,7 +3,7 @@
 # Description: This script demonstrates default values for positional parameters
 # Usage: ./default-1.sh [name] [course]
 
-name=$1
+name=$1                    # you can also give ${1}
 course=$2
 
 if [[ ! -n ${name} ]]; then
