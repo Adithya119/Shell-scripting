@@ -17,3 +17,20 @@ fi
 # at this point, the args will either have user-provided or default values
 
 echo "Hello ${name}, welcome to ${course} course"
+
+
+
+# ------
+# outcomes:-
+
+# [ec2-user@ip-172-31-45-220 7]$ ./default-1.sh
+# Hello guest, welcome to IT Introduction course
+
+# [ec2-user@ip-172-31-45-220 7]$ ./default-1.sh Adithya Shell scripting
+# Hello Adithya, welcome to Shell course
+
+# [ec2-user@ip-172-31-45-220 7]$ ./default-1.sh Adithya "Shell scripting"
+# Hello Adithya, welcome to Shell scripting course
+
+# [ec2-user@ip-172-31-45-220 7]$ ./default-1.sh Adithya
+# Hello Adithya, welcome to IT Introduction course
