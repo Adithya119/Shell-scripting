@@ -7,7 +7,7 @@ file_content=$3
 # check if 3 args are passed:-
 
 if [[ $# -ne 3 ]]; then        # checking for negative case 1st      # just like 'fail' module in Ansible playbook
-   echo "no of arguements passed is not equal to 3. Please pass 3 arguements"
+   echo "no. of arguements passed is not equal to 3. Please pass 3 arguements"
    exit 1
 fi
 
