@@ -7,3 +7,15 @@ for item in $(cat ${file_name})         # for every item in the contents of the 
 do
    echo "${item}"
 done
+
+
+
+
+# ---
+
+# outcome:-
+
+# [ec2-user@ip-172-31-45-220 7]$ ./IFS-2.sh
+# Hello,
+# This is Adithya
+# This file is used for IFS-1.sh
