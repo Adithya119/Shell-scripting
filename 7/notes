@@ -82,8 +82,9 @@ In c-language styled for-loop, 'courses' was defined outside of for-loop, unlike
 
 # IFS is a bash variable which has the purpose of defining which type of field separator you want for your script.
 
-# this script takes 'space' as IFS because 'space' is the default IFS
-refer "IFS-1.sh" :- it's treating each word (which doesn't have space within it) as item coz when it sees a space, it prints the next word in a separate line.    
+refer "IFS-1.sh" :- 
+this script takes 'space' as IFS because 'space' is the default IFS.
+Hence, when it sees a space, it prints the next word in a separate line.    
 
 # the only diff in 2nd script is that we are making 'newline' as the default IFS (IFS=$'\n').
 2nd script:- print each line as a line & dont break each word into a line   # this is called 'iteration over lines'
