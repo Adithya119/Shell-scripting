@@ -25,5 +25,7 @@ fi
 
 
 # since file is either created or present, add contents to it:-         # positive stmt, after making sure of no possible negatives.
-echo "adding contents to ${file_name}:-"
-echo ${file_content} >> ${dir_path}/${file_name}                        
+echo "adding contents to ${file_name}..."
+echo ${file_content} >> ${dir_path}/${file_name} 
+
+cat ${dir_path}/${file_name}
