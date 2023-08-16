@@ -34,22 +34,41 @@ refer default-trainer.sh    ==>  trainer's script
 # Hence look at "default-2.sh" for simpler & professional logic.
 Syntax used in default-2.sh is:-
 
-${parameter-"default"}     ==>  if parameter is not provided by user, use "default"
+#     ${parameter-"default"}     ==>  if parameter is not provided by user, use "default"
 
 ----
 
-####  Looping constructs in bash scripting  ####
+#### Looping constructs in bash scripting  ####
+1) for loops
+2) Internal Field Separator (IFS)
+3) Counting directories & files
+4) Nested Loops
+5) Redirecting loop output
+6) while and until loops
+
+
+
+1)
+for loop:-
+
+# Basic for loop syntax:-
+---
+for
+do
+
+done
+---
+
+# list all 5 courses that are available at Quality Thought:-
+
+refer for-loop-1.sh
+
 
 c lang styled for loop --> (a b c d) --> array of vars
 
 ## when in doubt about the syntax, just google for "bash 'for' loop examples" --> cyberciti.biz & search for ssh
 
-# Basic for loop syntax:-
-for
-do
 
-
-done
 
 ----
 
