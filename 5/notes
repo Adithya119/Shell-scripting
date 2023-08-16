@@ -1,6 +1,10 @@
 # class-5 notes
-
 # https://directdevops.blog/2020/08/31/linux-classroom-series-31-aug-2020/
+
+# Exit code / return code
+# Use of 'test' command
+# if-then-exit
+
 ----
 
 ##### Exit code / return code #####
@@ -43,3 +47,4 @@ test 5 -gt 10     # ----> it will return 1
 # check blog for notes
 
 if-then-exit-demo.sh   # ---> script which prints content of a file
+---

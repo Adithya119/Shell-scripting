@@ -1,8 +1,13 @@
 # class-2 notes
-
 # https://directdevops.blog/2020/08/25/linux-classroom-series-25-aug-2020/
 
+# variables
+# learning how to write arithmetic expressions
+# naming conventions (variables, CONSTANTS)
+# user inputs in shell scripting (positional args, named args)
+
 ----
+
 Assigning a variable in shell scripting:-
 java_package="openjdk-11-jdk"                     # similar to Terraform but no spaces around the "=" sign.
 
@@ -116,3 +121,4 @@ ex:-
 ping --count 4 google.com
 # google.com is a positional argument
 # where as 4 is a named argument as it is a value for a name called as count
+----

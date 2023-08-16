@@ -1,8 +1,12 @@
 # class-6 notes
-
 # https://directdevops.blog/2020/09/01/linux-classroom-series-01-sept-2020/
 
-# ############################   Key take away's:-  #################################
+# Some examples of popular conditions
+# if-then-else
+# handling multiple arguements from user
+# Dealing with y/n options in interactive scripts
+
+# ############################   Key take away :-  #################################
 
 # ##########   Always write negative statements 1st & at last when all postive negative cases are checked, write positive command.
 # in all of the files in this folder, we have written negative 1st.

@@ -1,6 +1,10 @@
 # class-4 notes
-
 # https://directdevops.blog/2020/08/29/linux-classroom-series-28-aug-2020/
+
+# "export" command 
+# use bash -x instead of bash -v
+# limiting user input character limit
+# hide the text which the user is typing
 
 ----
 #####################  * This class is just about making your scripts more professional *  #####################
@@ -68,10 +72,4 @@ Do you want to continue (y/n)? y
 # To hide the text when user is typing:-
 read -s -p "enter your password " password    # 's' may stand for secret
 
-----------------------------------------------------------------------------------------------------------------------------
-
-# summary:-
-1) "export" command 
-2) use bash -x instead of bash -v
-3) limiting user input character limit
-4) hide the text when user is typing
+----
