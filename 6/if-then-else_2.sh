@@ -10,5 +10,5 @@ if [[ ! -f ${FILE} ]]; then
 
 else 
    echo "printing the contents of ${FILE}"
-   cat ${FILE}
+   cat ${FILE}                      # no need to mention 'exit 0' coz script will naturally terminate at 'fi'
 fi
