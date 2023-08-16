@@ -1,15 +1,15 @@
 #!/bin/bash
 
-file_name=test-1.txt
+file_name=test-1.txt               # you can enclose test-1.txt in double quotes
 
 for item in $(cat ${file_name})        # for every item in the contents of the given file
 do
-   echo $item
+   echo $item                      # you can enclose $item in double quotes
 done
 
 
 ### Notes:-
-# you are storing each content in 'item', hence you need to use $item while printing
+# you are storing each content in 'item', hence you need to use $ before 'cat' & before 'item'
 
 
 # outcome:-
@@ -19,7 +19,9 @@ done
 # This
 # is
 # Adithya
-# I'm
-# learning
-# shell
-# scripting
+# This
+# file
+# is
+# used
+# for
+# IFS-1.sh

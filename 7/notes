@@ -84,7 +84,9 @@ In c-language styled for-loop, 'courses' was defined outside of for-loop, unlike
 
 refer "IFS-1.sh" :- 
 this script takes 'space' as IFS because 'space' is the default IFS.
-Hence, when it sees a space, it prints the next word in a separate line.    
+Hence, when it sees a space, it prints the next word in a separate line & so on.
+--
 
-# the only diff in 2nd script is that we are making 'newline' as the default IFS (IFS=$'\n').
-2nd script:- print each line as a line & dont break each word into a line   # this is called 'iteration over lines'
+refer "IFS-2.sh" :-
+The only diff in 2nd script is that we are making 'newline' as the default IFS. Add this line:- (IFS=$'\n').
+Hence, it prints each line as a line (as it is) ans so on. It doesn't break each word into a line       # this is called 'iteration over lines'
