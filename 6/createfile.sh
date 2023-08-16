@@ -19,9 +19,11 @@ fi                                    # no else stmt required coz if dir already
 
 
 if [[ ! -f ${dir_path}/${file_name} ]]; then            # # another possible negative case, with a positive stmt inside it
+   echo "The entered file ${file_name} doesn't exist. Hence creating ${file_name}..."
    touch ${dir_path}/${file_name} || { echo "cannot create file ${file_name}"; exit 1; }
 fi
 
 
-# since file is either created or present, add contents to it:-
-echo ${file_content} >> ${dir_path}/${file_name}                        # positive stmt, after making sure of no possible negatives.
+# since file is either created or present, add contents to it:-         # positive stmt, after making sure of no possible negatives.
+echo "adding contents to ${file_name}:-"
+echo ${file_content} >> ${dir_path}/${file_name}                        
