@@ -1,5 +1,5 @@
 #!/bin/bash
-# trainer has written this script in a different way ==> using "-ne 0"
+# trainer has written this script in a different way ==> using "-ne 0"   # he preferred to use negative statement
 
 mkdir temp-dir
 mkdir_ec=$?
