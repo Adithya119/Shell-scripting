@@ -16,8 +16,16 @@ note:- commands 4 & 5 yield the same result but have slighly different syntax
 
 ###### if-then-else  ######
 
+1)
 # if-then-else_1.sh       # my way => used positive statement 1st
 # if-then-else_2.sh       # trainer's way => negative statement 1st    ==> similar to writing 'fail' module as the 1st task in Ansible playbook
+
+2)
+# if-then-else-arg.sh
+1st stmt is just an if-then-exit stmt which checks if filename is empty (negative case)
+2nd stmt checks 2 possibilities using if-then-else stmt: 
+    (i) if the given file is not found (another possible negaive case)
+    (ii) if file exists, do something (positive case)
 
 
 combining multiple conditions with and & or statements

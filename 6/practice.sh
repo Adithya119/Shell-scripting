@@ -13,7 +13,7 @@ if [[ ! -f /tmp/1.txt ]]; then
 if [[ -n ${variable} ]]; then                    # n stands for 'not'
 
 # do something if the ${variable} is empty
-if [[ ! -n ${variable} ]]; then                  # ! -n    --> negation of negation => it's not not empty --> means empty
+if [[ ! -n ${variable} ]]; then                  # ! -n    --> negation of negation => it's not not empty --> means it's empty
 
 # do something if the ${variable} is empty
 if [[ -z ${variable} ]]; then
