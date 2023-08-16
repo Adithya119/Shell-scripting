@@ -1,0 +1,53 @@
+# class-7 notes
+
+# https://directdevops.blog/2020/09/02/linux-classroom-series-02-sept-2020/
+----
+
+### Special parameters  --> (refer blog)
+$-
+
+h: This is short for hash all    # this allows your programs to be found using the $PATH parameter
+i: Shows its and interactive shell
+m: This is short for monitor     # this allows you to move commands in & out of bg (background)
+B: This allows brace expansion. “`mkdir dir{1,2}
+H: This allows history expansion of running commands
+
+# whenever you are running bash, it utilizes all the above.
+----
+
+# ############    Note:- Always use variables in double quotes --> it will resolve lot of issues    ########################
+# ex:- "${file_name}"
+
+----
+
+
+####  Setting default values to parameters  ####
+
+
+
+----
+
+####  Looping constructs in bash scripting  ####
+
+c lang styled for loop --> (a b c d) --> array of vars
+
+## when in doubt about the syntax, just google for "bash 'for' loop examples" --> cyberciti.biz & search for ssh
+
+# Basic for loop syntax:-
+for
+do
+
+
+done
+
+----
+
+# IFS:-
+
+# By default the IFS value has one of (space, newline or tab)
+
+# this script takes 'space' as IFS because 'space' is the default IFS
+1st script:- it's treating each word (which doesn't have space within it) as item coz when it sees a space, it prints the next word in a separate line.    
+
+# the only diff in 2nd script is that we are making 'newline' as the default IFS (IFS=$'\n').
+2nd script:- print each line as a line & dont break each word into a line   # this is called - iteration over lines

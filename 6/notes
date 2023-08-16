@@ -95,5 +95,4 @@ In command line usage when arguments are in <> they are required arguments and i
 
 reply,,  # ->  ,, this converts to lower case
 reply^^  # ->  ^^ this converts to upper case
-
 ----
