@@ -15,7 +15,7 @@ fi
 if [[ ! -d ${dir_path} ]]; then                    # another possible negative case, with a positive stmt inside it
    echo "The entered directory ${dir_path} doesn't exist. Hence creating ${dir_path}..."
    mkdir ${dir_path} || { echo "cannot create ${dir_path}"; exit 1; }                         # enclose the echo & exit stmt in {}
-fi                                    # no else stmt required coz if dir already exists, do nothing for now.
+fi                                    # no else stmt required coz if dir already exists, check the below stmt.
 
 
 if [[ ! -f ${dir_path}/${file_name} ]]; then            # # another possible negative case, with a positive stmt inside it
@@ -26,6 +26,17 @@ fi
 
 # since file is either created or present, add contents to it:-         # positive stmt, after making sure of no possible negatives.
 echo "adding contents to ${file_name}..."
-echo ${file_content} >> ${dir_path}/${file_name} 
+echo ${file_content} >> ${dir_path}/${file_name}       # >> means apend.    > means overwite
 
 cat ${dir_path}/${file_name}
+
+
+
+# ----------
+# 1 of the outcomes:-
+
+# [ec2-user@ip-172-31-45-220 6]$ ./createfile.sh testing 7.txt "line-2"
+# The entered directory testing doesn't exist. Hence creating testing...
+# The entered file 7.txt doesn't exist. Hence creating 7.txt...
+# adding contents to 7.txt...
+# line-2
