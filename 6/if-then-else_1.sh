@@ -6,7 +6,7 @@ FILE=/tmp/2.txt
 
 if [[ -f ${FILE} ]]; then
    echo "printing the contents of ${FILE} below:- "
-   cat ${ FILE }
+   cat ${FILE}
 
 else 
    echo "file ${FILE} doesn't exist"
