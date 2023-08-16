@@ -10,3 +10,16 @@ done
 
 ### Notes:-
 # you are storing each content in 'item', hence you need to use $item while printing
+
+
+# outcome:-
+
+# [ec2-user@ip-172-31-45-220 7]$ ./IFS-1.sh
+# Hello,
+# This
+# is
+# Adithya
+# I'm
+# learning
+# shell
+# scripting
