@@ -9,5 +9,9 @@ echo "Hello ${name}, welcome to ${course} course"
 
 
 
-## syntax:-
+# ------
+# syntax:-
 # ${parameter-"default"}     ==>  if parameter is not provided by user, use "default"
+
+
+# outcomes here are the same as default-1.sh
