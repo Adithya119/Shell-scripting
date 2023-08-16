@@ -6,3 +6,6 @@ for (( index=0; index<5; index++ ))
 do
    echo ${courses[$index]}                             # plural here as well    # index also has $ before it
 done
+
+
+# echo "${courses[$index]}" also works  ==> double quotes is recommended to avoid issues.

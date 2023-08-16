@@ -20,7 +20,7 @@ H: This allows history expansion of running commands
 ----
 
 # ############    Note:- Always use variables in double quotes --> it will resolve lot of issues    ########################
-ex:- "${file_name}"
+ex:- "${file_name}", echo "${courses[$index]}"
 
 ----
 
@@ -65,6 +65,9 @@ refer "for-loop-1.sh"    ===> looks very easy
 
 refer "for-loop-2.sh" for c-language styled for-loop 
 syntax used:  --> courses=(a b c d e)   ==> array of variables
+
+# Summary of for-loop:-
+In c-language styled for-loop, 'courses' was defined outside of for-loop, unlike in for-loop-1.sh
 ----
 
 # Note:-
@@ -80,7 +83,7 @@ syntax used:  --> courses=(a b c d e)   ==> array of variables
 # IFS is a bash variable which has the purpose of defining which type of field separator you want for your script.
 
 # this script takes 'space' as IFS because 'space' is the default IFS
-1st script:- it's treating each word (which doesn't have space within it) as item coz when it sees a space, it prints the next word in a separate line.    
+refer "IFS-1.sh" :- it's treating each word (which doesn't have space within it) as item coz when it sees a space, it prints the next word in a separate line.    
 
 # the only diff in 2nd script is that we are making 'newline' as the default IFS (IFS=$'\n').
 2nd script:- print each line as a line & dont break each word into a line   # this is called 'iteration over lines'
