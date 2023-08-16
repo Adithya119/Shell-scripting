@@ -20,14 +20,21 @@ H: This allows history expansion of running commands
 ----
 
 # ############    Note:- Always use variables in double quotes --> it will resolve lot of issues    ########################
-# ex:- "${file_name}"
+ex:- "${file_name}"
 
 ----
 
 
 ####  Setting default values to parameters  ####
 
+refer default-1.sh          ==>  my own script
+refer default-trainer.sh    ==>  trainer's script
+# either of the above are fine but are basic. 
 
+# Hence look at "default-2.sh" for simpler & professional logic.
+Syntax used in default-2.sh is:-
+
+${parameter-"default"}     ==>  if parameter is not provided by user, use "default"
 
 ----
 
