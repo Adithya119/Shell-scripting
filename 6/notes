@@ -22,27 +22,35 @@ note:- commands 4 & 5 yield the same result but have slighly different syntax
 
 2)
 # if-then-else-arg.sh
-1st stmt is just an if-then-exit stmt which checks if filename is empty (negative case)
+1st stmt is just an if-then-exit stmt which checks if filename is empty (always check negative case 1st)
 2nd stmt checks 2 possibilities using if-then-else stmt: 
     (i) if the given file is not found (another possible negaive case)
     (ii) if file exists, do something (positive case)
+----
 
 
-combining multiple conditions with and & or statements
----
+# Till now we have passed only 1 arg. Let's see how to write code for 3 args:-
+
+# Lets try to write a shell script which creates a specified file in the specified directory with specified content. So argument list should be:- 
+./createfile.sh <directory_path> <filename> <file_contents>
+
+refer "createfile.sh"    
+# (we didn't have to use if-then-else in this script)
+
 
 # Note:-
-$#    # --> this tells no. of args you have passed to your script
+$#    --> this tells no. of args you have passed to your script
 
-# check if the directory exists, if it doesnot exist create directory. If for some reason, dir creation fails, print "cannot create directory" & do exit 1 because there's no point in continuing with this script anymore.
+# check if the directory exists, if it doesnot exist, create directory. If for some reason, dir creation fails, print "cannot create directory" & do exit 1 because there's no point in continuing with this script anymore:-
+
 if [[ ! -d ${directory_name} ]]; then
-    mkdir ${directory_name} || { echo "Cannot create directory"; exit 1; }
+    mkdir ${directory_name} || { echo "Cannot create directory"; exit 1; }   ### combining multiple conditions with and & or statements
 
-Note:-
+# Note:-
 if [[ ! -d
 write -d first & then give ! # --> make this a habit coz it's easy to remember
 
-# ||  ---> this denotes 'or' operation / statement
+# ||  ---> this denotes 'or' operation
 ---
 
 # Note:- do bash -x & see what commands its reading & executing
