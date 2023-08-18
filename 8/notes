@@ -29,3 +29,4 @@ script-1  --->  To check what value(s) is being assign to 'path' in the for loop
 
 In script 1, path is being processed as "/home/ubuntu/contents/*"  which is incorrect --> it should expand what's inside that dir.
 But in script-2, it is processing all the files/directories inside it.
+
