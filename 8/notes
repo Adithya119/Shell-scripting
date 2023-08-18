@@ -1,0 +1,31 @@
+# class-8 notes
+# https://directdevops.blog/2020/09/03/linux-classroom-series-03-sept-2020/
+
+# Looping constructs in bash scripting cont.... ()
+3) Counting directories & files (mistakes)
+4) Nested Loops
+5) Redirecting loop output
+6) while and until loops
+# 
+
+----
+
+
+# mkdir dir{1..10}   To create 10 directories using 1 command
+
+# Whenever you end up seeing script failure, do 'bash -x' to analyse.
+---
+
+3) Counting directories & files (mistakes)
+
+# diff between single & double quotes [[ ]]
+# "if-then-elif-then-fi" used inside "for" loop in the 1st script
+
+# Note:
+In 1st script, inside the for loop, the "$dir_path" is not 'expanding'. But in 2nd script, it is expanding. (check via bash -x for both scripts).
+
+# Note:
+script-1  --->  To check what value(s) is being assign to 'path' in the for loop, give:- echo "processing ${path}" ==> this is just like giving echo $PATH, echo #MAVEN_HOME, echo #JAVA_HOME in Jenkins jobs   ===> useful for troubleshooting purpose.
+
+In script 1, path is being processed as "/home/ubuntu/contents/*"  which is incorrect --> it should expand what's inside that dir.
+But in script-2, it is processing all the files/directories inside it.
