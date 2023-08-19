@@ -30,3 +30,56 @@ script-1  --->  To check what value(s) is being assign to 'path' in the for loop
 In script 1, path is being processed as "/home/ubuntu/contents/*"  which is incorrect --> it should expand what's inside that dir.
 But in script-2, it is processing all the files/directories inside it.
 
+
+# Note:-
+Q) To reuse last commands output:-
+A) echo $(!!)      # you can enclose it in "" ==> echo "$(!!)"
+
+
+----
+
+
+4)
+Nested loop:- 
+# Loop within a loop
+
+
+----
+
+
+5) 
+Redirecting loop output to a file:-
+
+>> rowscols.txt
+# redirecting should be done at 'done' level.
+
+
+----
+
+
+6)
+while and until loops:-
+
+# While loop definition:-
+be in the loop as long as the condition is true. 
+If notexit the loop.
+
+# Note:-
+# while doing any arithmetic expression, always use double brackets  (refer 2/arithmetic.sh) & below:-
+ex:- (( COUNT-- ))
+# echo $(( $number + 1 )) --> arithmetic.sh
+
+
+# using arithmetic inside while loop can be a challenge because both of these work:-
+
+[ $COUNT -gt 0 ]
+(( COUNT >= 0 ))
+--
+
+# Until loop definition:-
+be in the loop as long as the condition is false
+
+---------
+
+# Note:-
+You can choose any of 'for', 'while' or 'until' loop based on your choice & also based on which looping construct suits better for your code/logic.
