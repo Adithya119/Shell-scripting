@@ -25,10 +25,14 @@
 In 1st script, inside the for loop, the "$dir_path" is not 'expanding'. But in 2nd script, it is expanding. (check via bash -x for both scripts).
 
 # Note:
-script-1  --->  To check what value(s) is being assign to 'path' in the for loop, give:- echo "processing ${path}" ==> this is just like giving echo $PATH, echo #MAVEN_HOME, echo #JAVA_HOME in Jenkins jobs   ===> useful for troubleshooting purpose.
+script-1  --->  To check what value(s) is being assign to 'path' in the for loop, give:- echo "processing ${path}" ==> this is just like giving echo $PATH, echo $MAVEN_HOME, echo $JAVA_HOME in Jenkins jobs   ===> useful for troubleshooting purpose.
 
 In script 1, path is being processed as "/home/ubuntu/contents/*"  which is incorrect --> it should expand what's inside that dir.
 But in script-2, it is processing all the files/directories inside it.
+
+For remaining scripts' notes, check  #output written inside the scripts.
+
+* * * But as of this class, I understood that for some reason, when you use 'if' stmt inside 'for' stmt, it's not properly processing the 'if' stmt. * * *
 
 
 # Note:-
@@ -43,6 +47,7 @@ A) echo $(!!)      # you can enclose it in "" ==> echo "$(!!)"
 Nested loop:- 
 # Loop within a loop
 
+refer nested.sh
 
 ----
 
@@ -50,7 +55,9 @@ Nested loop:-
 5) 
 Redirecting loop output to a file:-
 
->> rowscols.txt
+refer redirect.sh
+
+>> row-col.txt
 # redirecting should be done at 'done' level.
 
 

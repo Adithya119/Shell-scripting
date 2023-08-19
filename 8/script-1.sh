@@ -13,3 +13,11 @@ do
         echo "$path is file"
     fi
 done
+
+
+
+### output:-
+
+# [ec2-user@ip-172-31-45-220 8]$ ./script-1.sh
+# Directory path entered by user is /home/ubuntu/contents/*
+# processing /home/ubuntu/contents/*
