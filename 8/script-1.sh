@@ -2,7 +2,7 @@
 
 echo "Directory path entered by user is /home/ubuntu/contents/*"
 
-for path in "/home/ubuntu/contents/*";
+for path in "/home/ubuntu/contents/*"
 do
     echo "processing ${path} "
     if [ -d "$path" ];
