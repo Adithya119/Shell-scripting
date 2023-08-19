@@ -2,11 +2,10 @@
 # https://directdevops.blog/2020/09/03/linux-classroom-series-03-sept-2020/
 
 # Looping constructs in bash scripting cont.... ()
-3) Counting directories & files (mistakes)
-4) Nested Loops
-5) Redirecting loop output
-6) while and until loops
-# 
+# 3) Counting directories & files (mistakes)
+# 4) Nested Loops
+# 5) Redirecting loop output
+# 6) while and until loops
 
 ----
 
@@ -39,7 +38,6 @@ For remaining scripts' notes, check  #output written inside the scripts.
 Q) To reuse last commands output:-
 A) echo $(!!)      # you can enclose it in "" ==> echo "$(!!)"
 
-
 ----
 
 
@@ -47,7 +45,7 @@ A) echo $(!!)      # you can enclose it in "" ==> echo "$(!!)"
 Nested loop:- 
 # Loop within a loop
 
-refer nested.sh
+refer 'nested.sh'
 
 ----
 
@@ -55,11 +53,10 @@ refer nested.sh
 5) 
 Redirecting loop output to a file:-
 
-refer redirect.sh
+refer 'redirect.sh' ==> # same as 'nested.sh' but output will not be displayed on console screen but will be redirected to whichever path you give.
 
 >> row-col.txt
 # redirecting should be done at 'done' level.
-
 
 ----
 
@@ -69,22 +66,21 @@ while and until loops:-
 
 # While loop definition:-
 be in the loop as long as the condition is true. 
-If notexit the loop.
+If not, exit the loop.
 
 # Note:-
 # while doing any arithmetic expression, always use double brackets  (refer 2/arithmetic.sh) & below:-
 ex:- (( COUNT-- ))
 # echo $(( $number + 1 )) --> arithmetic.sh
 
-
 # using arithmetic inside while loop can be a challenge because both of these work:-
 
-[ $COUNT -gt 0 ]
-(( COUNT >= 0 ))
+[ $COUNT -gt 0 ]   # refer while-2.sh
+(( COUNT >= 0 ))   # refer while-1.sh
 --
 
 # Until loop definition:-
-be in the loop as long as the condition is false
+be in the loop as long as the condition is false   (opposite of 'while' loop)
 
 ---------
 
