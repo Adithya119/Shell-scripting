@@ -9,7 +9,9 @@ do
 done
 
 
-# error:-
+
+#
+# error while using single bracket [ ] :-
 
 # [ec2-user@ip-172-31-45-220 8]$ ./while-2.sh
 # ./while-2.sh: line 5: [: COUNT: integer expression expected

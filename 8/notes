@@ -73,9 +73,11 @@ If not, exit the loop.
 ex:- (( COUNT-- ))
 # echo $(( $number + 1 )) --> arithmetic.sh
 
-# using arithmetic inside while loop can be a challenge because both of these work & yield the same result:-
+# using arithmetic inside while loop can be a challenge because all of these work & yield the same result:-
 
-[ $COUNT -gt 0 ]   # refer while-2.sh
+[ $COUNT -gt 0 ]     # refer while-2.sh
+[[ COUNT -gt 0 ]]    # $ is not needed when using [[ ]]
+
 (( COUNT >= 0 ))   # refer while-1.sh
 --
 
