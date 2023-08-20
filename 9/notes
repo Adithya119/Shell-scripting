@@ -1,0 +1,76 @@
+# class-9 notes
+# https://directdevops.blog/2020/09/04/linux-classroom-series-04-sept-2020/
+
+# Reading input from files
+# Functions (building blocks for Reusability)
+
+----
+
+A 'Function' is a re-usable block of code.
+
+Run 'declare -F' on CLI (The output of this command might vary with distribution)
+# declare -F | less
+# ALso try with -f (small f)
+
+# 1) declare -F | grep quote
+# 2) type quote
+#
+quote $USER 
+echo $(quote $USER)
+# both of the above commands should print the value of USER in quotes.
+
+--
+
+# Functions can be created using the following two syntaxes:-
+
+Syntax 1:-
+
+function-name() {
+    <code to be executed>
+}
+--
+
+Syntax 2:-                                     # paranthesis () are not needed if you're defining a fuction with the 'function' keyword.
+
+function <function-name> {
+    <code to be executed>
+}
+
+# In these function blocks/syntaxes, we don't have do & done blocks coz we have curly brackets { }
+
+# The scope of the function is inside the shell script. That's why it wont print anything unless you call the function. 
+# While calling a function, dont use () next to it.
+
+--
+
+# Note:-
+To make a function available to end users without even running a script, you need to export it this way:-
+
+(i) paste this function in the bottom of 'bashrc' file:-
+
+show_system_details() {
+    echo "Uptime is"
+    uptime
+    echo "Cpu details"
+    lscpu
+    echo "User list"
+    who
+}
+
+(ii) source bashrc
+
+(iii) show_system_details  # run this on CLI
+# it will show:- uptime, lscpu, who & whichever you write inside that function
+
+# after doing the above, this command will also work:-
+type show_system_details
+--
+
+# write a script which creates back-up of a file --> trainer included this code in the same 'function-demo.sh' file.
+
+is_file is a function. Just write your shell script inside a function
+
+# side note:
+# trainer said indentation doesn't matter while he was writing an if stmt.
+
+Notice that the is_file() function is taking an arguement --> "$1"

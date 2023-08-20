@@ -1,0 +1,4 @@
+localhost
+google.com
+bing.com
+xcloud.com
