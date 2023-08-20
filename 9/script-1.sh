@@ -18,4 +18,4 @@ cat checkservers.out
 
 
 # date +%x --> gives today's date (ex:- 08/20/2023)
-# this script is not listing 'xcloud.com' as 'up'
+# this script is not listing 'xcloud.com' as 'up' --> check script-2.sh notes for explanation

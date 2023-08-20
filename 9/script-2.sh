@@ -10,7 +10,16 @@ echo "The following servers are up on $(date +%x)" > status.output
 
 for item in $(cat "${1}")
 do
-   ping -c1 "${item}" && echo "This server is up: ${item}" >> status.output
+   { ping -c1 "${item}" && echo "This server is up: ${item}" } >> status.output
 done
 
 cat status.output
+
+
+
+## ----
+# ping -c1 "${item}" && echo "This server is up: ${item}" >> status.output
+
+# this means, if both ping & echo commands are successful, then only redirect the output to 'status.output'. That's why ping xcloud.com is not being redirected to 'status.output'. Hence the use of && between the 2 statements is justified.
+
+# echo $? shows '2' after running 'ping -c1 xcloud.com'

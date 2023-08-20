@@ -1,10 +1,26 @@
 # class-9 notes
 # https://directdevops.blog/2020/09/04/linux-classroom-series-04-sept-2020/
 
-# Reading input from files
-# Functions (building blocks for Reusability)
+# 1) Reading input from files
+# 2) Functions (building blocks for Reusability)
 
 ----
+
+1) Reading input from files:-
+
+script-1.sh  # trainer's file
+script-2.sh  # mine
+
+# Both yield the same result:-
+#    both are redirecting only the echo statement's output & not the ping's output. I know this after I tested this on CLI.
+ping -c1 "${item}" && echo "This server is up: ${item}" >> status.output
+
+This is the only drawback with these scripts.
+
+----
+
+
+2) Functions (building blocks for Reusability)
 
 A 'Function' is a re-usable block of code.
 
