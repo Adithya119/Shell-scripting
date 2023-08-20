@@ -11,12 +11,11 @@
 script-1.sh  # trainer's file
 script-2.sh  # mine
 
-# Both yield the same result:-
-#    both are redirecting only the echo statement's output & not the ping's output. I know this after I tested this on CLI.
 ping -c1 "${item}" && echo "This server is up: ${item}" >> status.output
+# script-1.sh is redirecting only the echo statement's output & not the ping's output. 1st I tested this on CLI.
+# script-2.sh is redirecting both the outputs coz I have enclosed ping && echo stmts within ( ). 1st I tested this on CLI.
 
-This is the only drawback with these scripts.
-
+But with both scripts, we are seeing the redirected content on console screen as well as a result of execution. This should not happen.
 ----
 
 

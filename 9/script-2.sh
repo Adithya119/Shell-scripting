@@ -10,8 +10,8 @@ echo "The following servers are up on $(date +%x)" > status.output
 
 for item in $(cat "${1}")
 do
-   (ping -c1 "${item}" && echo "This server is up: ${item}")
-done >> status.output
+   ( ping -c1 "${item}" && echo "This server is up: ${item}" ) >> status.output
+done
 
 cat status.output
 
