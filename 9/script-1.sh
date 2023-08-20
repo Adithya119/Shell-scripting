@@ -11,8 +11,8 @@ echo "The following servers are up on $(date +%x)" > checkservers.out
 
 while read item
 do
-    ping -c1 "${item}" && echo "this server is ip:- ${item}" >> checkservers.out
-done < $1
+    ping -c1 "${item}" && echo "this server is up:- ${item}"
+done < $1 && >> checkservers.out
 
 cat checkservers.out
 
