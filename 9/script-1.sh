@@ -15,6 +15,7 @@ do
 done < $1                                                            # you're telling while stmt to read 'item' from $1 arguement.
 
 echo "printing contents of checkoutservers.out"
+echo "..."
 cat checkservers.out
 
 
