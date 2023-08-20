@@ -11,11 +11,29 @@
 script-1.sh  # trainer's file
 script-2.sh  # mine
 
-ping -c1 "${item}" && echo "This server is up: ${item}" >> status.output
-# script-1.sh is redirecting only the echo statement's output & not the ping's output. 1st I tested this on CLI.
-# script-2.sh is redirecting both the outputs coz I have enclosed ping && echo stmts within ( ). 1st I tested this on CLI.
+# Firstly, lets understanding of the && operation in the below stmt :-
 
-But with both scripts, we are seeing the redirected content on console screen as well as a result of execution. This should not happen.
+ping -c1 "${item}" && echo "This server is up: ${item}" >> status.output
+
+# This means, if both ping & echo commands are successful, then only redirect the output to 'status.output'. 
+
+# "echo $?" shows "2" after running 'ping -c1 xcloud.com'. That's why "ping xcloud.com" is not being redirected to 'status.output'. This is the logic behind the use of && in-between the 2 statements.
+---
+
+# Secondly, lets understand what is wrong with this stmt (although it doesnt error out, it just doesnt give us what we need exactly) :-
+
+ping -c1 "${item}" && echo "This server is up: ${item}" >> status.output
+
+# This is used in 'script-1.sh' & is redirecting only the echo statement's output & not the ping's output. 1st I tested this on CLI. Because it's only redirecting the last stmt's (echo, in our case) output, it's printing the 1st stmt's (ping, in our case) output on the console screen while execution. ---> this issue is fixed in 'script-2.sh'
+---
+
+( ping -c1 "${item}" && echo "This server is up: ${item}" ) >> status.output
+# script-2.sh is redirecting both the outputs coz I have enclosed ping && echo stmts within ( ). 1st I tested this on CLI.
+---
+
+( ping -c1 "${item}" && echo "This server is up: ${item}" ) >> status.output || echo "${item} is not up"
+# redirect to status.output only if both ping & echo commands are successful. If not, print ${item} is not up.
+
 ----
 
 
