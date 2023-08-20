@@ -6,7 +6,7 @@ fi
 
 echo "The following servers are up on $(date +%x)" > status.output
 
-IFS=$'\n'
+# IFS=$'\n'
 
 for item in $(cat "${1}")
 do
