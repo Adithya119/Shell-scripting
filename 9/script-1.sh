@@ -9,9 +9,12 @@ fi
 
 echo "The following servers are up on $(date +%x)" > checkservers.out
 
-while read item; 
+while read item
 do
-    ping -c1 "${item}" && echo "Serverup ${item}" >> checkservers.out
+    ping -c1 "${item}" && echo "this server is ip:- ${item}" >> checkservers.out
 done < $1
 
 cat checkservers.out
+
+
+# date +%x --> gives today's date (ex:- 08/20/2023)
