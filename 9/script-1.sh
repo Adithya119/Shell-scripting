@@ -14,6 +14,7 @@ do
     ping -c1 "${item}" && echo "this server is up:- ${item}" >> checkservers.out
 done < $1                                                            # you're telling while stmt to read 'item' from $1 arguement.
 
+echo "..."
 echo "printing contents of checkoutservers.out"
 echo "..."
 cat checkservers.out
