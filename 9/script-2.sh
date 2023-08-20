@@ -13,6 +13,8 @@ do
    ( ping -c1 "${item}" && echo "This server is up: ${item}" ) >> status.output
 done
 
+echo "printing contents of status.output"
+echo "..."
 cat status.output
 
 
