@@ -12,7 +12,7 @@ echo "The following servers are up on $(date +%x)" > checkservers.out
 while read item
 do
     ping -c1 "${item}" && echo "this server is up:- ${item}" >> checkservers.out
-done < $1
+done < $1                                                            # you're telling while stmt to read 'item' from $1 arguement.
 
 cat checkservers.out
 
