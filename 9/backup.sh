@@ -5,7 +5,7 @@
 
 is_file() {
     if [ ! -f "$1" ]; then
-        echo "$1 is not a file"
+        echo "please enter a file next to ${0}. Cannot find ${1}"
         exit 2
     fi
 }
