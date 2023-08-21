@@ -86,7 +86,9 @@ function <function-name> {
 
 # In these function blocks/syntaxes, we don't have do & done blocks coz we have curly brackets { }
 
-# The scope of the function is inside the shell script. That's why it wont print anything unless you call the function. 
+The scope of the function is inside the shell script. That's why it wont print anything unless you call the function:- 
+refer 'function-demo.sh' and 'function-2.sh'
+
 
 # Note:-
 While calling a function, dont use () next to it.
