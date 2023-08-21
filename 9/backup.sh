@@ -19,4 +19,4 @@ backup_file() {
     echo "file is copied to $new_file_loc"
 }
 
-backup_file
+backup_file "/home/ec2-user/1.txt"
