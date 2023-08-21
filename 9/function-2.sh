@@ -1,12 +1,12 @@
 #!/bin/bash
 
 show_system_details() {
-    echo "uptime is:-"
+    echo "----uptime is----"
     uptime
-    echo "cpu details"
+    echo "----cpu details----"
     lscpu
-    echo "user list"
+    echo "----user list----"
     who
 }
 
-show_system_details
+show_system_details               # this is how you call a function. Plain & simple, by it's name.

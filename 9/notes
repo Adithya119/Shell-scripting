@@ -91,7 +91,7 @@ refer 'function-demo.sh' and 'function-2.sh'
 
 
 # Note:-
-While calling a function, dont use () next to it.
+While calling a function, dont use () next to it. Just use the function name. ------> refer 'function-2.sh'
 --
 
 To make a function available to end users without them having to run a script, you need to export it this way:-
