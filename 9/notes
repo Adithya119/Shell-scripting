@@ -112,18 +112,36 @@ show_system_details() {
 (iii) show_system_details  # run this on CLI
 # it will show:- uptime, lscpu, who & whichever you write inside that function
 
-After doing the above, "show_system_details" command will work & will show the desired output (same output as the output of 'function-2.sh' script)
+****************************
+After doing the above, "show_system_details" command will work & will show the desired output (same output as the output of 'function-2.sh' script). I guess this is how you can create customized commands for your team. 
+****************************
 
 # Now, these will also work:-
 type show_system_details       ---->  this will display the code of 'show_system_details' function
 declare -f will list 'show_system_details' function along with it's code.
 --
 
-# write a script which creates back-up of a file --> trainer included this code in the same 'function-demo.sh' file. I have written separately. Refer 'backup.sh'
+# write a script which creates back-up of a file --> trainer included this code in the same 'function-demo.sh' file. I have written separately. Refer 'backup.sh' & 'backup-2.sh'
 
-is_file --> is a function. Logic is to just write your shell script inside a function
+is_file --> is a function. The trick is to just write your shell script/code inside a function
 
 # side note:
 # trainer said indentation doesn't matter while he was writing an if stmt.
 
 Notice that the is_file() function is taking an arguement --> "$1"
+
+Dealing with functions is different when it comes to giving arguements:-
+# Refer 'backup.sh' :-
+I gave arg next to script name (it's not taking it):-
+# [ec2-user@ip-172-31-45-220 9]$ ./backup.sh /home/ec2-user/1.txt
+# Please provide a file name which needs back up
+Even though I gave an arg next to the scriptfile name ${0}, it's not detecting it. Hence, trainer gave arg (filename) inside the script file in this form:-
+# <function_name> <filepath>   ---> refer 'backup-2.sh'
+he called the function & gave filepath (arg) right next to it & it worked as shown below:-
+
+# [ec2-user@ip-172-31-45-220 9]$ ./backup.sh         --> no arg given here. arg given inside the script
+# file is copied to /home/ec2-user/1.txt.bak
+
+***************************
+Hence, when dealing with functions, give args to the function name, not to the script name
+***************************
