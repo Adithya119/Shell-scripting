@@ -6,7 +6,8 @@
 
 ----
 
-1) Reading input from files:-
+1) 
+Reading input from files:-
 
 script-1.sh  # trainer's file
 script-2.sh  # mine
@@ -32,14 +33,28 @@ ping -c1 "${item}" && echo "This server is up: ${item}" >> status.output
 ---
 
 ( ping -c1 "${item}" && echo "This server is up: ${item}" ) >> status.output || echo "${item} is not up"
-# redirect to status.output only if both ping & echo commands are successful. If not, print ${item} is not up.
+# redirect to status.output only if both ping & echo commands are successful. If not, print "${item} is not up".
 
 ----
 
 
-2) Functions (building blocks for Reusability)
+2) 
+Functions (building blocks for Reusability)
 
-A 'Function' is a re-usable block of code.
+# Definition:-
+A 'Function' is a re-usable block of code.  (Refer blog notes for some more content)
+
+Main principle/usage of Function is:- DRY principle (Don’t Repeat Your Self)
+
+We will cover the following aspects:
+
+(i)    Introduction
+(ii)   Passing Parameters to the functions
+(iii)  Variable scope
+(iv)   Returning values from functions
+(v)    Recursive functions
+
+(i)    Introduction:-
 
 Run 'declare -F' on CLI (The output of this command might vary with distribution)
 # declare -F | less
@@ -50,8 +65,8 @@ Run 'declare -F' on CLI (The output of this command might vary with distribution
 #
 quote $USER 
 echo $(quote $USER)
-# both of the above commands should print the value of USER in quotes.
-
+# both of the above commands should print the value of USER in quotes, coz that's the logic written inside quote function.
+ex:- 'ubuntu', 'ec2-user'
 --
 
 # Functions can be created using the following two syntaxes:-
@@ -63,7 +78,7 @@ function-name() {
 }
 --
 
-Syntax 2:-                                     # paranthesis () are not needed if you're defining a fuction with the 'function' keyword.
+Syntax 2:-                                 # paranthesis () are not needed if you're defining a function with the 'function' keyword.
 
 function <function-name> {
     <code to be executed>
@@ -72,12 +87,12 @@ function <function-name> {
 # In these function blocks/syntaxes, we don't have do & done blocks coz we have curly brackets { }
 
 # The scope of the function is inside the shell script. That's why it wont print anything unless you call the function. 
-# While calling a function, dont use () next to it.
-
---
 
 # Note:-
-To make a function available to end users without even running a script, you need to export it this way:-
+While calling a function, dont use () next to it.
+--
+
+To make a function available to end users without them having to run a script, you need to export it this way:-
 
 (i) paste this function in the bottom of 'bashrc' file:-
 
@@ -101,7 +116,7 @@ type show_system_details
 
 # write a script which creates back-up of a file --> trainer included this code in the same 'function-demo.sh' file.
 
-is_file is a function. Just write your shell script inside a function
+is_file --> is a function. Logic is to just write your shell script inside a function
 
 # side note:
 # trainer said indentation doesn't matter while he was writing an if stmt.
