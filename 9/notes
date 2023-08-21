@@ -85,16 +85,20 @@ function <function-name> {
 }
 
 # In these function blocks/syntaxes, we don't have do & done blocks coz we have curly brackets { }
+--
 
 The scope of the function is inside the shell script. That's why it wont print anything unless you call the function:- 
-refer 'function-demo.sh' and 'function-2.sh'
+refer 'function-demo.sh' notes.
 
-Also, because the scope of the function is inside the shell script, you won't be able to successfully get the desired output when you run the funtion on CLI:-
+After calling the function (function-2.sh), you'll be able to see the output of the function when you run 'function-2.sh' on CLI.
+But, you won't see the output when you run the function 'show_system_details' directly on CLI:-
 
 # [ec2-user@ip-172-31-45-220 9]$ show_system_details
 # -bash: show_system_details: command not found
+--
 
 Hence, to make a function available to end users without them having to run a script, you need to export it this way:-
+(To see the output when you run the function 'show_system_details' directly on CLI)
 
 (i) paste this function in the bottom of .bashrc file in the user's home dir:-
 
@@ -127,8 +131,6 @@ is_file --> is a function. The trick is to just write your shell script/code ins
 
 # side note:
 # trainer said indentation doesn't matter while he was writing an if stmt.
-
-Notice that the is_file() function is taking an arguement --> "$1"
 --
 
 Dealing with functions is different when it comes to giving arguements:-
