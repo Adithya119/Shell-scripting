@@ -9,4 +9,4 @@ show_system_details() {
     who
 }
 
-show_system_details               # this is how you call a function. Plain & simple, by it's name.
+show_system_details               # this is how you call a function. Plain & simple, by it's name. dont use () next to it
