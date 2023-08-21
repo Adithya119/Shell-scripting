@@ -38,5 +38,14 @@ backup_file "/home/ec2-user/1.txt"         # enclosing in quotes is optional
 
 # ---
 
-# This script starts executing only when it sees a function call (i.e; at line-22).
-# 1st it sees a funtion call at line-22, then it goes to that function at line-15 --> then read line-16 & calls 'is_file' function which is at line-6 --> after executing 'is_file' function & if the return code is 0, it comes back to line-17 & continues with the rest of the code.
+# This script starts executing only when it sees a function call (i.e; at line-22). Hence it jumps to line-22 1st.
+# 1st it sees a funtion call at line-22, then it goes to that function at line-15 --> then it reads line-16 & calls 'is_file' function which is at line-6 --> after executing 'is_file' function & if the return code is 0, it comes back to line-17 & continues with the rest of the code. **** Refer below for proof ****
+
+# [ec2-user@ip-172-31-45-220 9]$ bash -x backup-2.sh
+# + backup_file /home/ec2-user/1.txt
+# + is_file /home/ec2-user/1.txt
+# + '[' '!' -f /home/ec2-user/1.txt ']'
+# + new_file_loc=/home/ec2-user/1.txt.bak
+# + cp /home/ec2-user/1.txt /home/ec2-user/1.txt.bak
+# + echo 'file is copied to /home/ec2-user/1.txt.bak'
+# file is copied to /home/ec2-user/1.txt.bak

@@ -149,3 +149,8 @@ he called the function & gave filepath (arg) right next to it & it worked as sho
 ***************************
 Hence, when dealing with functions, give args to the function name, not to the script name
 ***************************
+
+
+**********************************
+Look at backup-2.sh file's notes for a clear explanation of that code
+**********************************
