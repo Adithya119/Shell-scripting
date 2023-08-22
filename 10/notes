@@ -1,0 +1,42 @@
+# class-10 notes
+# https://directdevops.blog/2020/09/07/linux-classroom-series-07-sept-2020/
+
+# Functions continuation...
+#       (ii) Passing arrays/parameters to a Function:-
+#       (iii) Variable scope
+#       (iv)  Returning values from functions
+
+----
+
+# An Array in shell is something that can be defined within paranthesis - ( )
+ex:- array_1=(value1 value2 . . . value-n)
+
+names=('Adithya' 'Gomathi')
+then check with echo ${names[0]}
+
+
+(ii)
+Passing arrays/parameters to a function:-  # ( passing arrays as parameters/args to a Function? )
+
+$@ --> # with this you will get all the parameters that were passed to the script ( refer https://stackoverflow.com/questions/9994295/what-does-mean-in-a-shell-script )
+
+passing_arrays.sh   # --> Lets pass parameters/arguments to shell script which in turn passes array to the function
+
+# look at blog for few more commands
+---
+
+
+(iii) 
+Variable scope:-
+
+With shell scripting, a variable defined inside a function becomes a global variable just like a variable which was defined outside the function.   # This is not the case with programming languages like C, Java, python etc,.. where a variable defined inside a function only has scope within that function, which actually makes sense.
+
+Hence, in shell scripting every variable is a global variable "by default". 
+If your variable has to be local to a function, you have to explicitly mention it.
+---
+
+
+(iv)
+Returning values from functions:-
+
+Return value from a function using the 'return' keyword

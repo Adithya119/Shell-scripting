@@ -46,12 +46,12 @@ A 'Function' is a re-usable block of code.  (Refer blog notes for some more cont
 
 Main principle/usage of Function is:- DRY principle (Don’t Repeat Your Self)
 
-We will cover the following aspects:
+We will cover the following aspects regarding 'Functions' :-
 
 (i)    Introduction
-(ii)   Passing Parameters to the functions
-(iii)  Variable scope
-(iv)   Returning values from functions
+(ii)   Passing Parameters to the functions       # class-10
+(iii)  Variable scope                            # class-10
+(iv)   Returning values from functions           # class-10
 (v)    Recursive functions
 
 (i)    Introduction:-
@@ -125,6 +125,8 @@ type show_system_details       ---->  this will display the code of 'show_system
 declare -f will list 'show_system_details' function along with it's code.
 --
 
+
+*****************
 # write a script which creates back-up of a file --> trainer included this code in the same 'function-demo.sh' file. I have written separately. Refer 'backup.sh' & 'backup-2.sh'
 
 is_file --> is a function. The trick is to just write your shell script/code inside a function
