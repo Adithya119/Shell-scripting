@@ -6,4 +6,4 @@ function_1() {
    echo "${1}"
 }
 
-function_1 "${array_a[$@]}"
+function_1 "${array_a}"
