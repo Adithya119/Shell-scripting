@@ -3,7 +3,7 @@
 array_a=(Gomathi Adithya)
 
 function_1() {
-   echo "${1}"
+   echo "${$@}"
 }
 
 function_1 "${array_a}"
