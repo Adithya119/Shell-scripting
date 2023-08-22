@@ -1,6 +1,6 @@
 #!/bin/bash
 
-array_a=(Gomathi Adithya)
+array_a=('Gomathi' 'Adithya')
 
 function_1() {
    echo $@
