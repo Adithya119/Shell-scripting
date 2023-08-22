@@ -1,9 +1,9 @@
 #!/bin/bash
 
-array_a=('Gomathi' 'Adithya')
+array_a=(Gomathi Adithya)
 
 function_1() {
-   echo $@
+   echo 
 }
 
-function_1 "${array_a}"
+function_1 "${array_a[$@]}"
