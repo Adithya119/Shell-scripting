@@ -3,8 +3,8 @@
 getValue()
 {
     ABC=$1
-    XYZ="something"$ABC
-    echo $XYZ
+    XYZ="something $ABC"
+    return $XYZ
 }
 
 
