@@ -8,12 +8,12 @@ display_names() {
 }
 
 echo "Calling function"
-display_names "${names[@]}"
+display_names "${names[@]}"  # giving args here is not needed when you are giving it inside the function directly (line-7)
 
 
 
 # ---
-# inside the function, you can also define the parameter ( "${names[@]}" ) that was passed to it, like this:-
+# Inside the function, you can also define the parameter ( "${names[@]}" ) that was passed to it, like this:- ( but in this case, you have to pass args to the function while calling it)      ---> like in '1-trainer-arrays.sh'
 
 # array=$@
 #    echo "The array inside the function is ${array[@]}"
