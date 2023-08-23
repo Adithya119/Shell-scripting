@@ -1,7 +1,7 @@
 #!/bin/bash
 print_message() {
     a="${1}"
-    b="Message is ${a}"
+    b="Message is $a"
     return b
 }
 
