@@ -1,11 +1,12 @@
 #!/bin/bash
-print_message() {
-    a="${1}"
-    b="Message is $a"
-    return $b
+
+getValue()
+{
+    ABC=$1
+    XYZ="something"$ABC
+    echo $XYZ
 }
 
-print_message
 
-b=$print_message
-echo $b
+VALUE=$( getValue "12345" )
+echo $VALUE
