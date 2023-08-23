@@ -11,3 +11,5 @@ display_names() {
 display_names
 
 echo "values of test_array outside function: ${test_array[*]}"
+
+echo "values of test_array outside function: ${test_array[*]}"
