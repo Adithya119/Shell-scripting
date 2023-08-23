@@ -28,7 +28,7 @@ display_array ${test_input_1[*]}
 
 
 
-#  --------- the echo stmts in for loops 'is not' printing in a loop because * is passing all args as 1 string.
+#  --------- the echo stmts in for loops 'is not' printing in a loop because * is passing all args as 1 arg/string.
 
 # [ec2-user@ip-172-31-45-220 10]$ ./2-trainer_arrays.sh
 # External item 1 2 3 4 5

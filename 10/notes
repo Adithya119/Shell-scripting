@@ -17,7 +17,22 @@ Passing arrays as args to a Function:-
 
 $@ --> # with this you will get all the parameters that were passed to the script ( refer https://stackoverflow.com/questions/9994295/what-does-mean-in-a-shell-script )
 
+$@ = stores all the arguments as a list of arguements
+$* = stores all the arguments as a single string
+$# = stores the no. of arguments
+
+*********************************
+Always use $@ inside " " to avoid errors  ---> "$@"
+*********************************
+
 # All the scripts in this folder are trial and error & just for understanding.
+
+# Note:-
+A globally defined 'array' will be available inside a function even though you have not passed that array as a parameter/arg to that function while calling it.
+
+A locally defined 'array' (inside function) will be available outside the function as well.
+
+****** Hence, an array, by default is global ******
 
 # look at blog for few more commands
 ---

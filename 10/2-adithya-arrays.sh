@@ -9,10 +9,10 @@ do
 done
 
 display_names() {
-    array=$*   #  Doesn't matter if you give * or @ here coz while calling the function (line-22) you have given @. Hence looping will be done properly.
+    array=$*   #  Doesn't matter if you give * or @ here coz while calling the function (line-22) you have given @ and in 'line-17' you have given @ - Hence looping will be done properly.
     echo "array has the following name(s) inside function: ${array[@]}"
 
-    for item in "$@"          # but giving * here will take all values of array as 1 string & hence display all values in 1 line (looping is not done properly)
+    for item in "$@"          # but giving * here will take all values of array as 1 value/string & hence display all values in 1 line (looping is not done properly)
     do
        echo "name inside function is: ${item}"
     done

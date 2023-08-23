@@ -28,7 +28,7 @@ display_array ${test_input_1[@]}                         # here, @ is mandatory 
 
 
 
-# -----------  the echo stmts in for loops 'is' printing in a loop because @ is passing individual args as it is (not passing all args as 1 string)
+# -----------  the echo stmts in for loops 'is' printing in a loop because @ is passing individual args as it is (not passing all args as 1 arg/string)
 
 # [ec2-user@ip-172-31-45-220 10]$ ./3-trainer-arrays.sh
 # External item 1

@@ -17,7 +17,7 @@ echo "..."
 echo " *** defining cars array globally *** "
 cars=(Alto vento)   # Note:- this is not given to the function as a parameter
 echo "${0}"   #  executable
-echo "${1}"   #  positional arg-1 given to executable
+echo "${1}"   #  positional arg given to the executable
 echo "..."
 
 
@@ -25,7 +25,7 @@ display_names() {
     array=$@
     echo "***** Below are the parameters passed to the function *****"   ##
     echo "0 is always executable: ${0}"   ## 0th arguement is always the executable (./positional_args_parameters.sh) wheather you run it inside or outside a function.
-    echo "1st parameter: ${1}"   # but the remaining parameters within function are the ones you pass to the function while calling it & not the args given to the executable - refer the bottom most output which shows output with 1 positional arg.
+    echo "1st parameter: ${1}"   # but the remaining parameters within function are the ones you pass to the function while calling it & not the positional args given to the executable - refer the bottom most output which shows output with 1 positional arg.
     echo "2nd parameter: ${2}"
     echo "3rd parameter: ${3}"
     echo "***** Below are the values of 'cars' array available even inside the function when called by its name ***** "
@@ -81,29 +81,31 @@ display_names "${names[@]}"
 # ---
 ## --------------------------- gave 1 positional arg ( Hello! ) to the executable -------------------------
 
-# [ec2-user@ip-172-31-45-220 10]$ ./positional_args_parameters.sh Hello!
-#  ***** Below are the parameters of 'names' array*****
-# 0th parameter: Gomathi
-# 1st parameter: Adithya RK
-# 2nd parameter: twins
-# 3rd parameter:
+# [ec2-user@ip-172-31-45-220 10]$ ./arrays-args-parameters.sh Hello!
+#  ***** Below are the values of 'names' array *****
+# 0th value: Gomathi
+# 1st value: Adithya RK
+# 2nd value: twins
+# 3rd value:
 # ...
-# 0th parameter: ./positional_args_parameters.sh
-# 1st parameter: Hello!
-# 2nd parameter:
+# 0 is always executable: ./arrays-args-parameters.sh
+# 1st arguement: Hello!
+# 2nd arguement:
 # ...
-# ./positional_args_parameters.sh
+#  *** defining cars array globally ***
+# ./arrays-args-parameters.sh
 # Hello!
+# ...
 # Calling function
 # ***** Below are the parameters passed to the function *****
-# 0th parameter: ./positional_args_parameters.sh
+# 0 is always executable: ./arrays-args-parameters.sh
 # 1st parameter: Gomathi
 # 2nd parameter: Adithya RK
 # 3rd parameter: twins
-# ***** Below are the parameters of 'cars' array *****
-# 0th parameter: Alto
-# 1st parameter: vento
-# 2nd parameter:
+# ***** Below are the values of 'cars' array available even inside the function when called by its name *****
+# 0th value: Alto
+# 1st value: vento
+# 2nd value:
 # looping using @ inside the function: Gomathi
 # looping using @ inside the function: Adithya RK
 # looping using @ inside the function: twins
