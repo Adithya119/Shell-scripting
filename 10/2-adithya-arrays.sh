@@ -3,13 +3,13 @@
 names=(Gomathi 'Adithya RK' twins)
 echo "array has the following name(s): ${names[*]}"
 
-for item in "${names[@]}"
+for item in "${names[*]}"   # 1
 do
    echo "name is: ${item}"
 done
 
 display_names() {
-    array=$@
+    array=$*   # 2
     echo "array has the following name(s) inside function: ${array[@]}"
 
     for item in "$@"
@@ -20,3 +20,4 @@ display_names() {
 
 echo "Calling function"
 display_names "${names[@]}" 
+
