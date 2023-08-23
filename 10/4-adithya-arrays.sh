@@ -17,7 +17,7 @@ do
    echo "name is: ${item}"
 done
 
-cars=(Alto vento)
+cars=(Alto vento)     ###
 
 display_names() {
     array=$@
