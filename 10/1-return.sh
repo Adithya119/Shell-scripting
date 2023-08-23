@@ -7,7 +7,7 @@ getValue()
     echo $XYZ
 }
 
-VALUE=$( getValue "12345" )
+VALUE=$( getValue "12345" )     # logic
 echo $VALUE
 
 
