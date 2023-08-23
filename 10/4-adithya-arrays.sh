@@ -5,7 +5,7 @@ echo "array has the following name(s): ${names[*]}"
 echo "0th parameter: ${names[0]}"    ##
 echo "1st parameter: ${names[1]}"
 echo "2nd parameter: ${names[2]}"
-echo "3rd parameter: ${names[3]}" || echo "empty"
+echo "3rd parameter: ${names[3]}"
 
 for item in "${names[@]}"
 do
