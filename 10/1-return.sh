@@ -2,7 +2,7 @@
 print_message() {
     a="${1}"
     b="Message is ${input}"
-    return $b
+    return b
 }
 
 print_message Hello!
