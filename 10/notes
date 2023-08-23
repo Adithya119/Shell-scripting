@@ -35,6 +35,9 @@ A locally defined 'array' (inside function) will be available outside the functi
 ****** Hence, an array, by default is global ******
 
 If your array has to be local to a function, you have to explicitly mention it.    ----> refer 'local_arrays.sh'
+--
+
+When you re-define an existing array with new values, there will not be any conflict, but old values of that array will be overwritten by the new values. ----------> refer the 2 'array-conflict.sh' files.
 
 
 # look at blog for few more commands
