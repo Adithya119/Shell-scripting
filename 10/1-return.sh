@@ -2,10 +2,10 @@
 print_message() {
     a="${1}"
     b="Message is ${input}"
-    return "${b}"
+    return $b
 }
 
 print_message Hello!
 
-$reply=$print_message "1"
+$reply=$print_message
 echo $reply
