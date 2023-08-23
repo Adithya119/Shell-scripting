@@ -5,5 +5,5 @@ print_message() {
     return b
 }
 
-b=print_message()
+b=print_message
 echo $b
