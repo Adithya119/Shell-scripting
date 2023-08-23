@@ -2,7 +2,7 @@
 
 
 display_names() {
-    local test_array=(test-1 test-2)
+    test_array=(test-1 test-2)
     echo "values of test_array inside function: ${test_array[*]}"
     echo "${1}"         # will display the 1st arg that was passed to the function while calling it.
 }

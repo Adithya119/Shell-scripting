@@ -30,9 +30,12 @@ Always use $@ inside " " to avoid errors  ---> "$@"
 # Note:-
 A globally defined 'array' will be available inside a function even though you have not passed that array as a parameter/arg to that function while calling it.
 
-A locally defined 'array' (inside function) will be available outside the function as well.
+A locally defined 'array' (inside function) will be available outside the function as well.   ----> refer 'arrays_are_global.sh'
 
 ****** Hence, an array, by default is global ******
+
+If your array has to be local to a function, you have to explicitly mention it.    ----> refer 'local_arrays.sh'
+
 
 # look at blog for few more commands
 ---
