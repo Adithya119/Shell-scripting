@@ -1,12 +1,13 @@
 #!/bin/bash
 
-array_a=(Gomathi Adithya)
+#display_array() {
+#    array=$@
+#    echo "The array inside the function is ${array[*]}" 
+#}
 
-function_1() {
-   for item in "${array_a}"
-   do
-      echo $@
-   done
-}
+test_input_1=(1 2 3 4 5)
 
-function_1 "${array_a[$@]}"
+echo "The orginal array for test input 1 is ${test_input_1[*]}"
+#echo "Calling function"
+
+#display_array ${test_input_1[*]}
