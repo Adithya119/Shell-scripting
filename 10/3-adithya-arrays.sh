@@ -10,8 +10,7 @@ done
 
 display_names() {
     array=$@
-    echo "array has the following name(s) inside function: ${3}"
-    echo "${2}"
+    echo "array has the following name(s) inside function: ${array[@]}"
 
     for item in "$@"
     do
