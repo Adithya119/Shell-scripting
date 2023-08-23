@@ -1,7 +1,7 @@
 #!/bin/bash
 
 display_array() {
-    array=$@
+    array=$*
     echo "The array inside the function is ${array[*]}" 
 }
 
