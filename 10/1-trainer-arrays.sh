@@ -16,3 +16,5 @@ display_array ${test_input_1[*]}
 
 
 # with this script, @ & *  both are giving me exact same result
+
+# Hence, when no loops are used in your script, * & @ won't make any difference
