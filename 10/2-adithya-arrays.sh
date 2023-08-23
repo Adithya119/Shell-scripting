@@ -1,11 +1,11 @@
 #!/bin/bash
 
-names=(Gomathi 'Adithya RK' twins)
+names=('Gomathi' 'Adithya RK' 'twins')
 echo "array has the following name(s): ${names[*]}"
 
 display_names() {
     array=$@
-    echo "array has the following name(s) inside function: ${array[2]}"
+    echo "array has the following name(s) inside function: ${array[1]}"
 }
 
 echo "Calling function"
