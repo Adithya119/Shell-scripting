@@ -14,7 +14,7 @@ echo "2nd arguement: ${2}"
 echo "..."
 
 
-echo "defining cars array globally"
+echo " *** defining cars array globally *** "
 cars=(Alto vento)   # Note:- this is not given to the function as a parameter
 echo "${0}"   #  executable
 echo "${1}"   #  positional arg-1 given to executable
@@ -28,7 +28,7 @@ display_names() {
     echo "1st parameter: ${1}"   # but the remaining parameters within function are the ones you pass to the function while calling it & not the args given to the executable - refer the bottom most output which shows output with 1 positional arg.
     echo "2nd parameter: ${2}"
     echo "3rd parameter: ${3}"
-    echo "***** Below are the values of 'cars' array available inside the function when called by its name***** "
+    echo "***** Below are the values of 'cars' array available even inside the function when called by its name ***** "
     echo "0th value: ${cars[0]}"    ## Even though cars array was not passed as parameters to the function, a function can list it's values by it's name. Hence a globally defined 'array' will be available inside a function even though you have not passed that array as a parameter/arg to that function while calling it.
     echo "1st value: ${cars[1]}"
     echo "2nd value: ${cars[2]}"
