@@ -15,7 +15,6 @@ function_test
 echo "value of var_1 -- ${var_1}"
 echo "value of var_2 -- ${var_2}"
 
-
 echo "..."
 
 # the same vars re-defined with new values
