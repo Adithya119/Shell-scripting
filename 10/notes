@@ -20,6 +20,8 @@ Passing arrays/parameters to a function:-  # ( passing arrays as parameters/args
 
 $@ --> # with this you will get all the parameters that were passed to the script ( refer https://stackoverflow.com/questions/9994295/what-does-mean-in-a-shell-script )
 
+# All the scripts written here are trial and error & just for understanding:-
+
 passing_arrays.sh   # --> Lets pass parameters/arguments to shell script which in turn passes array to the function
 
 # look at blog for few more commands
