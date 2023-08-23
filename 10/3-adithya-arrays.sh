@@ -11,7 +11,8 @@ done
 display_names() {
     array=$@
     echo "array has the following name(s) inside function: ${array[@]}"
-
+    echo "${array[1]}"
+    
     for item in "$@"
     do
        echo "name inside function is: ${item}"
