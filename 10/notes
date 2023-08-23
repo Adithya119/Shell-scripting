@@ -47,9 +47,12 @@ When you re-define an existing array with new values, there will not be any conf
 (iii) 
 Variable scope:-
 
-With shell scripting, a variable defined inside a function becomes a global variable just like a variable which was defined outside the function.   # This is not the case with programming languages like C, Java, python etc,.. where a variable defined inside a function only has scope within that function, which actually makes sense.
+With shell scripting, just like an array, a variable defined inside a function becomes a global variable just like a variable which was defined outside the function.
 
-Hence, in shell scripting every variable is a global variable "by default". 
+******** Hence, in shell scripting every variable is a global variable "by default".   *********   ---> refer 'variable_scope.sh'
+
+This is not the case with programming languages like C, Java, python etc,.. where a variable defined inside a function only has scope within that function, which actually makes sense.
+ 
 If your variable has to be local to a function, you have to explicitly mention it.
 ---
 
