@@ -52,8 +52,10 @@ With shell scripting, just like an array, a variable defined inside a function b
 ******** Hence, in shell scripting every variable is a global variable "by default".   *********   ---> refer 'variable_scope.sh'
 
 This is not the case with programming languages like C, Java, python etc,.. where a variable defined inside a function only has scope within that function, which actually makes sense.
+
+# and just like arrays, When you re-define an existing variable with new value, there will not be any conflict, but old value of that variable will be overwritten by the new value. ----------> refer 'vars-conflict.sh'
  
-If your variable has to be local to a function, you have to explicitly mention it.
+Just like arrays, if your variable has to be local to a function, you have to explicitly mention it.  ----> refer 'local-vars.sh'
 ---
 
 
