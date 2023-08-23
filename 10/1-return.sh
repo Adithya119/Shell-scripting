@@ -5,7 +5,5 @@ print_message() {
     return b
 }
 
-print_message Hello!
-
-$reply=$print_message
-echo $reply
+b=print_message()
+echo $b
