@@ -17,6 +17,8 @@ do
    echo "name is: ${item}"
 done
 
+cars=(Alto vento)
+
 display_names() {
     array=$@
     echo "array has the following name(s) inside function: $@"   ##
@@ -24,11 +26,10 @@ display_names() {
     echo "1st parameter: ${1}"
     echo "2nd parameter: ${2}"
     echo "3rd parameter: ${3}"
-    echo "below are the parameters of names array:"
-    echo "0th parameter: ${names[0]}"    ##
-    echo "1st parameter: ${names[1]}"
-    echo "2nd parameter: ${names[2]}"
-    echo "3rd parameter: ${names[3]}"
+    echo "below are the parameters of 'cars' array:"
+    echo "0th parameter: ${cars[0]}"    ##
+    echo "1st parameter: ${cars[1]}"
+    echo "2nd parameter: ${cars[2]}"
 
     for item in "$@"
     do
