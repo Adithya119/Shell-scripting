@@ -3,7 +3,7 @@
 getValue()
 {
     ABC=$1
-    XYZ="something $ABC"
+    XYZ="something" $ABC
     return "$XYZ"
 }
 
