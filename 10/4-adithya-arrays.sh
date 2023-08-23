@@ -6,6 +6,11 @@ echo "0th parameter: ${names[0]}"    ##
 echo "1st parameter: ${names[1]}"
 echo "2nd parameter: ${names[2]}"
 echo "3rd parameter: ${names[3]}"
+echo "..."
+echo "0th parameter: ${0}"   ##
+echo "1st parameter: ${1}"
+echo "2nd parameter: ${2}"
+echo "3rd parameter: ${3}"
 
 for item in "${names[@]}"
 do
