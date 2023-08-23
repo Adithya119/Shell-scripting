@@ -21,4 +21,4 @@ echo "..."
 var_1=200
 var_2=300
 echo "value of var_1 -- ${var_1}"
-echo "value of var_1 -- ${var_1}"
+echo "value of var_2 -- ${var_2}"
