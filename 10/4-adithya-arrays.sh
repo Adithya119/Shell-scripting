@@ -56,7 +56,7 @@ display_names "${names[@]}"
 # name is: twins
 # Calling function
 # array has the following name(s) inside function: Gomathi Adithya RK twins
-# 0th parameter: ./4-adithya-arrays.sh    ---------->  executable is $0
+# 0th parameter: ./4-adithya-arrays.sh    ---------->  ${0} is executable
 # 1st parameter: Gomathi
 # 2nd parameter: Adithya RK
 # 3rd parameter: twins
