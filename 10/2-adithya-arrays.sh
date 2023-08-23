@@ -9,7 +9,7 @@ do
 done
 
 display_names() {
-    array=$@   # 2
+    array=$*   # 2
     echo "array has the following name(s) inside function: ${array[@]}"
 
     for item in "$@"              # 3     # giving * will take all values of array as 1 string & hence display all values in 1 line (looping is not done properly)
@@ -19,5 +19,5 @@ display_names() {
 }
 
 echo "Calling function"
-display_names "${names[*]}" 
+display_names "${names[@]}" 
 
