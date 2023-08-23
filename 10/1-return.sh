@@ -9,3 +9,9 @@ getValue()
 
 VALUE=$( getValue "12345" )
 echo $VALUE
+
+
+# ----
+
+# [ec2-user@ip-172-31-45-220 10]$ ./1-return.sh
+# something12345

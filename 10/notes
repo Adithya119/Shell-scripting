@@ -62,4 +62,4 @@ Just like arrays, if your variable has to be local to a function, you have to ex
 (iv)
 Returning values from functions:-
 
-Return value from a function using the 'return' keyword
+Return value from a function ---> refer '1-return.sh'
