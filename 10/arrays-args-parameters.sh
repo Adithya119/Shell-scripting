@@ -1,7 +1,7 @@
 #!/bin/bash
 
 names=(Gomathi 'Adithya RK' twins)
-echo " ***** Below are the values of 'names' array***** "
+echo " ***** Below are the values of 'names' array ***** "
 echo "0th value: ${names[0]}"
 echo "1st value: ${names[1]}"
 echo "2nd value: ${names[2]}"
@@ -47,29 +47,31 @@ display_names "${names[@]}"
 
 # --------
 
-# [ec2-user@ip-172-31-45-220 10]$ ./positional_args_parameters.sh
-#  ***** Below are the parameters of 'names' array*****
-# 0th parameter: Gomathi
-# 1st parameter: Adithya RK
-# 2nd parameter: twins
-# 3rd parameter:
+# [ec2-user@ip-172-31-45-220 10]$ ./arrays-args-parameters.sh
+#  ***** Below are the values of 'names' array *****
+# 0th value: Gomathi
+# 1st value: Adithya RK
+# 2nd value: twins
+# 3rd value:
 # ...
-# 0th parameter: ./positional_args_parameters.sh
-# 1st parameter:
-# 2nd parameter:
+# 0 is always executable: ./arrays-args-parameters.sh
+# 1st arguement:
+# 2nd arguement:
 # ...
-# ./positional_args_parameters.sh
+#  *** defining cars array globally ***
+# ./arrays-args-parameters.sh
 # 
+# ...
 # Calling function
 # ***** Below are the parameters passed to the function *****
-# 0th parameter: ./positional_args_parameters.sh
+# 0 is always executable: ./arrays-args-parameters.sh
 # 1st parameter: Gomathi
 # 2nd parameter: Adithya RK
 # 3rd parameter: twins
-# ***** Below are the parameters of 'cars' array *****
-# 0th parameter: Alto
-# 1st parameter: vento
-# 2nd parameter:
+# ***** Below are the values of 'cars' array available even inside the function when called by its name *****
+# 0th value: Alto
+# 1st value: vento
+# 2nd value:
 # looping using @ inside the function: Gomathi
 # looping using @ inside the function: Adithya RK
 # looping using @ inside the function: twins
