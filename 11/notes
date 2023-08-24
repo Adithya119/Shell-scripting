@@ -9,11 +9,12 @@
 
 ----
 
-
 (iv) 
 Returning Text from functions:-
 
-Because variables are global, you can just reference the var (which was defined inside the function) even outside the function.
+Because variables are global, a variable which was defined inside a function, can be referenced outside that function as well. This is the simplest form of returning text from a function. -------> refer 'return_text.sh' for simplest form. Refer below similar files with minor modifications. Approach is "start simple, complicate later":-
+'2-return_text.sh'
+'3-return_text.sh'
 
 ********
 # Note:- In bash it's for sure not possible to 'return' a string using return keyword. 
