@@ -1,0 +1,52 @@
+# class-11 notes
+# https://directdevops.blog/2020/09/08/linux-classroom-series-08-sept-2020/
+
+# Functions continuation....
+#      (iv) Returning Text from functions
+#      (v) Recursive Functions
+# Exercise-1: 
+# Exercise-2: 
+
+----
+
+
+(iv) 
+Returning Text from functions:-
+
+Because variables are global, you can just reference the var (which was defined inside the function) even outside the function.
+
+********
+# Note:- In bash it's for sure not possible to 'return' a string using return keyword. 
+The return keyword can only return exit/return codes.
+********
+
+Hence to return a string or text, you have to hack it. Instead of using 'return' inside a function, use 'echo'
+There are 2 possible ways to hack it. --> refer blog for it.
+
+3rd approach is to export it using env variables. --> not in blog
+
+Q) Interview question:
+Can we return a string from a shell script or from a function inside it?
+A) No, not by default. But yes, by hacking it using the above 2 possible ways.
+
+---
+
+
+(v)
+Recursive functions:-           # you might not even write this but it's good to know
+
+# Definition:-
+A function that calls itself is a recursive function.
+
+# classic example for recursive function is 'factorial' ---> 1 arg is enough for this
+# You might be asked about this function in interviews but you rarely use this in organizations
+
+$(( )) --> for arithmetic expressions
+
+----
+
+
+# Exercises:
+For both these exercises, use functions & only give 2 args.
+
+For exercise-1, you can use curl or wget
