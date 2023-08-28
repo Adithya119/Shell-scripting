@@ -14,4 +14,7 @@ echo $b
 # $ ./return_text.sh
 # user input is Hello how are you
 
-# echo $b   --->  referencing the var which was defined inside the function. This is the simplest form of returning text from a function.
+# echo $b   --->  Using global variables (referencing the var which was defined inside the function). 
+#                  This is the simplest form of returning text from a function.
+
+# refer '2-return_text.sh' to prompt for user input.
