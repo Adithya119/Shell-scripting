@@ -1,0 +1,19 @@
+for(index=0; index<len(message); index++) {
+    match_position = index
+
+    try {
+
+         message[match_position] == 'c' or throw Backtracking
+         match_position++;
+
+         message[match_position] == 'a' or throw Backtracking
+         match_position++;
+
+         message[match_position] == 't' or throw Backtracking
+         match_position++;
+
+        return TRUE;
+
+    }
+}
+return FALSE;

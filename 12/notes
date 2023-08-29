@@ -1,0 +1,58 @@
+# class-12 notes
+# https://directdevops.blog/2020/09/12/linux-classroom-series-11-sept-2020/
+
+# Regular Expressions (regex)
+
+----
+
+# Regular Expressions are used to:-
+1. search files,
+2. search content/text in files,
+3. search specific text in log message files.
+
+A regular expression not 'decalarative' but is 'imperative'; They are functions; they are code. They have most of the properties of a programming language.
+Regular expression is subroutine/function/method
+
+# Note:- 
+#   ERE - Extended Regular Expression
+#   egrep (extended grep), 
+#   gawk (global awk).
+---
+
+# In Regular expressions we have six major dialects. But important one's are 1) BRE, 2) ERE & 5) PCRE
+
+To try some online regex, google for 'regex online' or to be specific, google for 'ERE regex online'
+
+# Go to "regex101.com":-
+refer 1.png --> # paste some content in TEST STRING & search for any 1 word
+
+refer 2.png --> # paste some content about cats & search for the word 'cat'
+#       To search for the word 'cat' in the text sequence in all six dialects, the regex is /cat/
+
+refer 3.png --> # state transitions from 'start' to 'Match'. Refer 'code explaination:-' below.
+---
+
+
+# code which will search for the word 'cat' (using regular expressions):-
+refer 'code' file.
+
+
+match_position  # this is a variable which stores the value(s) of index
+
+try{} block
+
+Backtracking means 'go 1 level before'    # refer 'Backtracking:-' below
+
+return TRUE     # if all of the code in try block is true, then it will return TRUE. If not, it'll return FALSE
+
+
+# code explaination:-
+
+until the code comes across 'c', it'll move forward (match_position++). Even when code comes across space, it'll ignore & move forward until it sees 'c'. As soon as it sees 'c', 'state transition' happens from 'c' to 'a' --> meaning, the code will transition from 'searching for c' to 'searching for a'. And so on...
+
+# note:- after every alpahbet search, the code will increase it's index (index=0; index<len(message); index++)
+
+---
+# Backtracking:-
+
+If the code went through a word called 'can', it goes through state transitions of 'c' and 'a' and when it hits 'n', it is a mismatch because it is not 't'; hence it needs to go back and go to the next word. This 'going back' is called 'backtracking'.
