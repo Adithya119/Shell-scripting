@@ -12,7 +12,7 @@ download_file() {
 
 download_file
 echo "${url} has been downloaded to ${dest}"
-echo "ls /tmp/"
+ls /tmp/apache*
 
 
 
