@@ -14,7 +14,7 @@ download_file
 echo "..."
 echo "**** Running 'ls -ltr /tmp/apache*' to check if the file has been downloaded ****"
 echo "..."
-ls -ltr /tmp/apache*
+ls -ltr ${dest}apache*              # ls -ltr /tmp/apache*
 
 
 
