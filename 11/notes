@@ -58,6 +58,6 @@ A function that calls itself is a recursive function.
 # Exercises:-
 For both these exercises, use functions & only give 2 args.
 
-For Exercise-1, you can use curl or wget --> refer 'download_file.sh'
+For Exercise-1, you can use curl or wget --> refer 'download_file.sh' & '2-download_file.sh' (very minor diff btw these 2 files)
 
-# chmod -R +x 11/     ---> to give execute permission to all files and subfolders in the directory '11'
+# Note:- chmod -R +x 11/     ---> to give execute permission to all files and subfolders in the directory '11'
