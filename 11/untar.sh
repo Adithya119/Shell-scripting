@@ -22,3 +22,10 @@ ls "${dest}"
 
 
 # -----
+# [ec2-user@ip-172-31-45-220 11]$ ./untar.sh
+# Enter the path where the tar file is: /tmp/apache-tomcat-9.0.80.tar.gz
+# Enter the dest path where you want to extract the file to: /home/ec2-user/
+# ...
+# **** Running 'ls /home/ec2-user/' to check if the file was extracted ****
+# ...
+# 1.txt  1.txt.bak  apache-tomcat-9.0.80  contents  Shell-scripting
