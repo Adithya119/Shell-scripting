@@ -49,8 +49,9 @@ A function that calls itself is a recursive function.
 # classic example for recursive function is 'factorial' ---> 1 arg is enough for this
 # You might be asked about this function in interviews but you rarely use this in organizations
 
-$(( )) --> for arithmetic expressions
+# $(( )) --> for arithmetic expressions
 
+# refer 'recursive.sh' -----> as the name suggests, it recurses in a loop.
 ----
 
 
