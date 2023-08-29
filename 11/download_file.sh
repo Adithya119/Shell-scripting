@@ -11,8 +11,10 @@ download_file() {
 }
 
 download_file
-echo "${url} has been downloaded to ${dest}"
-ls /tmp/apache*
+echo "..."
+echo "**** Running 'ls -ltr /tmp/apache*' to check if the file has been downloaded"
+echo "..."
+ls -ltr /tmp/apache*
 
 
 
