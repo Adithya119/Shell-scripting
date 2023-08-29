@@ -7,7 +7,7 @@ download_file() {
     wget -P "${1}" "${2}"           ##
 }
 
-download_file ${dest} ${url}        # passing user inputs as args to the function
+download_file "${dest}" "${url}"        # passing user inputs as args to the function
 echo "..."
 echo "**** Running 'ls -ltr /tmp/apache*' to check if the file has been downloaded"
 echo "..."
