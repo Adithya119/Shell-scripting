@@ -88,4 +88,4 @@ Hence, when it sees a space, it prints the next word in a separate line & so on.
 
 refer "IFS-2.sh" :-
 The only diff in 2nd script is that we are making 'newline' as the default IFS. Add this line:- (IFS=$'\n').
-Hence, it prints each line as a line (as it is) ans so on. It doesn't break each word into a line       # this is called 'iteration over lines'
+Hence, it prints each line as a line (as it is) and so on. It doesn't break each word into a line       # this is called 'iteration over lines'

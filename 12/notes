@@ -10,7 +10,7 @@
 2. search content/text in files,
 3. search specific text in log message files.
 
-A regular expression not 'decalarative' but is 'imperative'; They are functions; they are code. They have most of the properties of a programming language.
+A regular expression is not 'decalarative' but is 'imperative'; They are functions; they are code. They have most of the properties of a programming language.
 Regular expression is subroutine/function/method
 
 # Note:- 

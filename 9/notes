@@ -12,7 +12,7 @@ Reading input from files:-
 script-1.sh  # trainer's file
 script-2.sh  # mine
 
-# Firstly, lets understanding of the && operation in the below stmt :-
+# Firstly, lets understand the && operation in the below stmt :-
 
 ping -c1 "${item}" && echo "This server is up: ${item}" >> status.output
 
